@@ -1,12 +1,24 @@
-import add from './index';
+import cloneDeep from './index';
 
-describe('계산테스트', () => {
-  test("3 adds 5 equals 8", () => {
-    const num1 = 3;
-    const num2 = 5
+describe('깊은 복사 테스트', () => {
+  // given
+  const input = {
+    a: 1,
+    b: {
+      c: null,
+      d: [1, 2]
+    }
+  };
 
-    const result = add(num1, num2)
+  // when
+  const output = cloneDeep(input);
 
-    expect(result).toBe(num1 + num2);
-  })
+  // then
+  test("깊은 복사를 진행한 서로 다른 두 객체는 동일하지 않다.", () => {
+    expect(output).not.toBe(input);
+  });
+
+  test("깊은 복사를 진행한 서로 다른 두 객체는 동등하다.", () => {
+    expect(output).toEqual(input);
+  });
 })
