@@ -14,11 +14,11 @@ import copySet from './copys/copySet';
 
 function cloneReference(value) {
   if (isArray(value)) return copyArray(value);
-  if (isObject(value)) return copyObject(value);
   if (isDate(value)) return copyDate(value);
   if (isRegExp(value)) return copyRegExp(value);
   if (isMap(value)) return copyMap(value);
   if (isSet(value)) return copySet(value);
+  return copyObject(value);
 }
 
 export default cloneReference;
