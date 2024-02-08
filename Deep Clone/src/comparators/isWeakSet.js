@@ -1,4 +1,5 @@
 import isObject from './isObject';
+
 import objectClass from './objectClass';
 
 function isWeakSet(value) {

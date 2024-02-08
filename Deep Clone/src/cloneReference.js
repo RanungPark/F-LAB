@@ -1,15 +1,16 @@
 import isArray from './comparators/isArray';
-import isDate from './comparators/isDate';
-import isMap from './comparators/isMap';
-import isRegExp from './comparators/isRegExp';
-import isSet from './comparators/isSet';
-import copyDate from './copys/copyDate';
-import copyMap from './copys/copyMap';
-import copyRegExp from './copys/copyRegExp';
-import copySet from './copys/copySet';
-import copyArray from './copys/copyArray';
 import isObject from './comparators/isObject';
+import isDate from './comparators/isDate';
+import isRegExp from './comparators/isRegExp';
+import isMap from './comparators/isMap';
+import isSet from './comparators/isSet';
+
+import copyArray from './copys/copyArray';
 import copyObject from './copys/copyObject';
+import copyDate from './copys/copyDate';
+import copyRegExp from './copys/copyRegExp';
+import copyMap from './copys/copyMap';
+import copySet from './copys/copySet';
 
 function cloneReference(value) {
   if (isArray(value)) return copyArray(value);

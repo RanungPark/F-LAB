@@ -1,6 +1,8 @@
+import isObject from '../comparators/isObject';
+
 import clonePrimitive from '../clonePrimitive';
 import cloneReference from '../cloneReference';
-import isObject from '../comparators/isObject';
+
 import getKeysAndValues from '../getKeysAndValues';
 
 function copyObject(value) {
