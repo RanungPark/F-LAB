@@ -1,7 +1,5 @@
 function copyMap(value) {
-  const copyValue = [...value];
-
-  return new Map(copyValue);
+  return new Map([...value]);
 }
 
 export default copyMap;

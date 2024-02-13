@@ -1,7 +1,5 @@
 function copyRegExp(value) {
-  const copyValue = value.valueOf();
-
-  return new RegExp(copyValue);
+  return new RegExp(value.valueOf());
 }
 
 export default copyRegExp;

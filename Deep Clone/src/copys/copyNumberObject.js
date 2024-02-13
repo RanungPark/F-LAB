@@ -1,7 +1,5 @@
 function copyNumberObject(value) {
-  const copyValue = value.valueOf();
-
-  return new Number(copyValue);
+  return new Number(value.valueOf());
 }
 
 export default copyNumberObject;

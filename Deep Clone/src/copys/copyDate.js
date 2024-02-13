@@ -1,7 +1,5 @@
 function copyDate(value) {
-  const copyValue = value.toString();
-
-  return new Date(copyValue)
+  return new Date(value.toString())
 }
 
 export default copyDate

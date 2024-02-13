@@ -1,7 +1,5 @@
 function copySet(value) {
-  const copyValue = [...value];
-
-  return new Set(copyValue);
+  return new Set([...value]);
 }
 
 export default copySet;

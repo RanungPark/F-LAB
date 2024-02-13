@@ -1,5 +1,3 @@
-import isNull from './isNull';
-
 function objectClass(value) {
   const toString = Object.prototype.toString;
 

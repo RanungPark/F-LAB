@@ -13,15 +13,10 @@
  *  - Date, Set, Map, object, typedArray, regex, symbol
  */
 
-import isObject from './comparators/isObject';
-
-import clonePrimitive from './clonePrimitive';
 import cloneReference from './cloneReference';
 
 const cloneDeep = (value) => {
-  const cloneDeepValue = isObject(value) ? cloneReference(value) : clonePrimitive(value);
-
-  return cloneDeepValue;
+  return cloneReference(value)
 }
 
 export default cloneDeep;

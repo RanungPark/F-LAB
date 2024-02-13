@@ -1,7 +1,5 @@
 function copyStringObject(value) {
-  const copyValue = value.valueOf();
-
-  return new String(copyValue);
+  return new String(value.valueOf());
 }
 
 export default copyStringObject;

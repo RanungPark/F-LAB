@@ -1,7 +1,5 @@
 function copyBooleanObject(value) {
-  const copyValue = value.valueOf();
-
-  return new Boolean(copyValue);
+  return new Boolean(value.valueOf());
 }
 
 export default copyBooleanObject;
