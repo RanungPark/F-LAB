@@ -16,8 +16,10 @@ import copySet from './copys/copySet';
 import copyNumberObject from './copys/copyNumberObject';
 import copyStringObject from './copys/copyStringObject';
 import copyBooleanObject from './copys/copyBooleanObject';
+import isCyclic from './comparators/isCyclic';
 
 function cloneReference(value) {
+  if (isCyclic(value)) throw new Error('순환참조 에러')
   if (isArray(value)) return copyArray(value);
   if (isDate(value)) return copyDate(value);
   if (isRegExp(value)) return copyRegExp(value);
