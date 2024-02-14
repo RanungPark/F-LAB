@@ -1,9 +1,7 @@
-import isObject from './isObject';
-
-import objectClass from './objectClass';
+import isNill from './isNill';
 
 function isStringObject(value) {
-  return isObject(value) && objectClass(value) === '[object String]'
+  return !isNill(value) && value instanceof String
 }
 
 export default isStringObject;

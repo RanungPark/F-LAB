@@ -1,9 +1,7 @@
-import isObject from './isObject';
-
-import objectClass from './objectClass';
+import isNill from './isNill';
 
 function isRegExp(value) {
-  return isObject(value) && objectClass(value) === '[object RegExp]'
+  return !isNill(value) && value instanceof RegExp
 }
 
 export default isRegExp;

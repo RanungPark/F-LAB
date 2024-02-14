@@ -1,9 +1,7 @@
-import isObject from './isObject';
-
-import objectClass from './objectClass';
+import isNill from './isNill';
 
 function isNumberObject(value) {
-  return isObject(value) && objectClass(value) === '[object Number]'
+  return !isNill(value) && value instanceof Number
 }
 
 export default isNumberObject;

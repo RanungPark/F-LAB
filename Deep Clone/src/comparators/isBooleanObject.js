@@ -1,9 +1,7 @@
-import isObject from './isObject';
-
-import objectClass from './objectClass';
+import isNill from './isNill';
 
 function isBooleanObject(value) {
-  return isObject(value) && objectClass(value) === '[object Boolean]'
+  return !isNill(value) && value instanceof Boolean
 }
 
 export default isBooleanObject;

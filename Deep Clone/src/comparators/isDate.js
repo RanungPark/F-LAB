@@ -1,9 +1,7 @@
-import isObject from './isObject';
-
-import objectClass from './objectClass';
+import isNill from './isNill';
 
 function isDate(value) {
-  return isObject(value) && objectClass(value) === '[object Date]'
+  return !isNill(value) && value instanceof Date
 }
 
 export default isDate;

@@ -3,8 +3,7 @@ import isNill from './isNill';
 function isObject(value) {
   const type = typeof value;
 
-  return type === 'object' && !isNill(value);
-
+  return !isNill(value) && type === 'object';
 }
 
 export default isObject;

@@ -1,9 +1,7 @@
-import isObject from './isObject';
-
-import objectClass from './objectClass';
+import isNill from './isNill';
 
 function isMap(value) {
-  return isObject(value) && objectClass(value) === '[object Map]'
+  return !isNill(value) && value instanceof Map
 }
 
 export default isMap;

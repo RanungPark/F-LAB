@@ -1,9 +1,7 @@
-import isObject from './isObject';
-
-import objectClass from './objectClass';
+import isNill from './isNill';
 
 function isSet(value) {
-  return isObject(value) && objectClass(value) === '[object Set]'
+  return !isNill(value) && value instanceof Set
 }
 
 export default isSet;
