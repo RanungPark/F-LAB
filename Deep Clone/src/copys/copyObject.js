@@ -1,12 +1,14 @@
 import isObject from '../comparators/isObject';
 
-import cloneReference from '../cloneReference';
+import cloneDeep from '../cloneDeep';
 
 function copyObject(obj) {
-  return Object.entries(obj).reduce((acc, [key, value]) => {
-    acc[key] = isObject(value) ? cloneReference(value) : value;
+  if (isObject(obj)) return Object.entries(obj).reduce((acc, [key, value]) => {
+    acc[key] = cloneDeep(value);
     return acc;
   }, {});
+
+  return null;
 }
 
 export default copyObject;

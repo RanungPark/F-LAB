@@ -1,12 +1,11 @@
-import isObject from '../comparators/isObject';
+import isArray from '../comparators/isArray';
 
-import cloneReference from '../cloneReference';
+import cloneDeep from '../cloneDeep';
 
 function copyArray(value) {
-  return value.map(v =>
-    isObject(v) ? cloneReference(v) : v
-  );
+  if (isArray(value)) return value.map(v => cloneDeep(v));
 
+  return null;
 }
 
 export default copyArray;

@@ -1,5 +1,9 @@
+import isDate from '../comparators/isDate';
+
 function copyDate(value) {
-  return new Date(value.toString())
+  if (isDate(value)) return new Date(value.toString());
+
+  return null;
 }
 
 export default copyDate

@@ -1,5 +1,9 @@
+import isStringObject from '../comparators/isStringObject';
+
 function copyStringObject(value) {
-  return new String(value.valueOf());
+  if (isStringObject(value)) return new String(value.valueOf());
+
+  return null;
 }
 
 export default copyStringObject;

@@ -1,5 +1,9 @@
+import isMap from '../comparators/isMap';
+
 function copyMap(value) {
-  return new Map([...value]);
+  if (isMap(value)) return new Map([...value]);
+
+  return null;
 }
 
 export default copyMap;
