@@ -1,13 +1,27 @@
-import createRouter from './router.js'
+import createRouter from "./router.js";
 
-const contaniner = document.querySelector('main')
-const pages = {
-  home: () => contaniner.innerText = 'home page',
-  melon: () => contaniner.innerText = 'melon page',
-}
+const container = document.querySelector("main")
 
-const router = createRouter();
+const router = createRouter([
+  {
+    path: '#/',
+    element: () => container.innerText = "home page",
+  },
+  {
+    path: '#/blog',
+    element: () => container.innerText = "blog page",
+  },
+  {
+    path: '#/blog/:name/:page',
+    element: (params) => container.innerText = `${params.name} ${params.song}page`,
+  },
+]);
 
-router.addRoute('#/', pages.home)
-      .addRoute('#/melon', pages.melon)
-      .start();
+window.addEventListener('click', e => {
+  console.log()
+  if (e.target.getAttribute("data-navigate")) {
+    router.navigate(e.target.getAttribute("data-navigate"))
+  }
+})
+
+router.start();

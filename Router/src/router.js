@@ -1,22 +1,19 @@
-export default function createRouter() {
-  const routes = [];
-  
-  const router = {
-    addRoute(fragment, component) {
-      routes.push({fragment, component});
-      return this;
-    },
+export default function createRouter(routes) {
+  const PATH_PARAMETER = /:([^/]+)/;
 
+  const router = {
     start() {
       const checkRoutes = () => {
-        const currentRoute = routes.find(route => route.fragment === window.location.hash);
-        currentRoute.component();
+        const currentRoute = routes.find(route => route.path === window.location.hash);
+        currentRoute.element();
       }
-
       window.addEventListener('hashchange', checkRoutes);
       checkRoutes();
-    }
-  }
+    },
+    navigate(path) {
+      window.location.hash = path;
+    },
+  };
 
   return router;
 }
