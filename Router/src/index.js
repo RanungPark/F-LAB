@@ -13,12 +13,11 @@ const router = createRouter([
   },
   {
     path: '#/blog/:name/:page',
-    element: (params) => container.innerText = `${params.name} ${params.song}page`,
+    element: (params) => container.innerText = `${params.name} ${params.page}page`,
   },
 ]);
 
 window.addEventListener('click', e => {
-  console.log()
   if (e.target.getAttribute("data-navigate")) {
     router.navigate(e.target.getAttribute("data-navigate"))
   }
