@@ -1,29 +1,46 @@
-import matchPathParameters from './matchPathParameters.js';
+class Router {
+  constructor(routes) {
+    this.routes = routes;
+  }
 
-export default function createRouter(routes) {
-  const router = {
-    start() {
-      const checkRoutes = () => {
-        const currentHash = window.location.hash;
-        const currentRoutes = routes.find(route => {
-          const routePath = route.path.replace(/:([^/]+)/g, '([^/]+)');
-          const regex = new RegExp(`^${routePath}$`);
-          return regex.test(currentHash);
-        });
-        if (currentRoutes) {
-          const params = matchPathParameters(currentHash, currentRoutes.path);
-          currentRoutes.element(params);
-        }
+  static matchPathParameters(currentPath, routePath) {
+    const params = {};
+    const currentPathSections = currentPath.split('/');
+    const routePathSections = routePath.split('/');
+
+    routePathSections.forEach((routePathSection, i) => {
+      if (routePathSection.startsWith(':')) {
+        const paramName = routePathSection.substring(1);
+        params[paramName] = currentPathSections[i];
       }
+    })
+    return params;
+  }
 
-      window.addEventListener('hashchange', checkRoutes);
-      checkRoutes();
-    },
+  static checkRoutes(routes) {
+    const PATH_PARAMETER = /:([^/]+)/g;
+    const currentPath = window.location.pathname;
+    const currentRoutes = routes.find(route => {
+      const routePath = route.path.replace(PATH_PARAMETER, '([^/]+)');
+      const regex = new RegExp(`^${routePath}$`);
+      return regex.test(currentPath);
+    });
 
-    navigate(path) {
-      window.location.hash = path;
-    },
-  };
+    if (currentRoutes) {
+      const params = Router.matchPathParameters(currentPath, currentRoutes.path);
+      currentRoutes.element(params);
+    }
+  }
 
-  return router;
+  start() {
+    window.addEventListener('popstate', () => Router.checkRoutes(this.routes));
+    Router.checkRoutes(this.routes);
+  }
+
+  navigate(path) {
+    history.pushState(null, '', path);
+    Router.checkRoutes(this.routes);
+  }
 }
+
+export default Router;
