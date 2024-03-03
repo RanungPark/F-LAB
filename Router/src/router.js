@@ -19,15 +19,17 @@ class Router {
 
   static checkRoutes(routes) {
     const PATH_PARAMETER = /:([^/]+)/g;
-    const currentPath = window.location.pathname;
+    const CHANGE_PARAMETER = '([^/]+)';
+    const { pathname } = location;
     const currentRoutes = routes.find(route => {
-      const routePath = route.path.replace(PATH_PARAMETER, '([^/]+)');
+      const routePath = route.path.replace(PATH_PARAMETER, CHANGE_PARAMETER);
       const regex = new RegExp(`^${routePath}$`);
-      return regex.test(currentPath);
+      return regex.test(pathname);
     });
-
-    if (currentRoutes) {
-      const params = Router.matchPathParameters(currentPath, currentRoutes.path);
+    if (currentRoutes === pathname) {
+      currentRoutes.element();
+    } else {
+      const params = Router.matchPathParameters(pathname, currentRoutes.path);
       currentRoutes.element(params);
     }
   }
@@ -38,7 +40,7 @@ class Router {
   }
 
   navigate(path) {
-    history.pushState(null, '', path);
+    history.pushState({}, '', path);
     Router.checkRoutes(this.routes);
   }
 }

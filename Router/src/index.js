@@ -13,14 +13,18 @@ const router = new Router([
   },
   {
     path: '/blog/:name/:page',
-    element: (params) => container.innerText = `${params.name} ${params.page}page`,
+    element: ({name, page}) => container.innerText = `${name} ${page}page`,
   },
 ]);
 
 document.addEventListener('click', e => {
-  if (e.target.getAttribute("data-navigate")) {
+  const { target } = e
+  if (target.matches("[data-navigate]")) {
     e.preventDefault();
     router.navigate(e.target.getAttribute("data-navigate"));
+  } else if (target.matches('a')) {
+    e.preventDefault();
+    router.navigate(e.target.href);
   }
 });
 
