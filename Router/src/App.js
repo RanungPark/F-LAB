@@ -4,15 +4,6 @@ const container = document.querySelector(".App");
 
 const routerInstance = createRouter({ $target: container })
 
-document.addEventListener('click', e => {
-  const { target } = e
-  if (target.matches("[data-navigate]")) {
-    e.preventDefault();
-    routerInstance.navigate(e.target.getAttribute("data-navigate"));
-  } else if (target.matches('a')) {
-    e.preventDefault();
-    routerInstance.navigate(e.target.href);
-  }
-});
+document.addEventListener('click', routerInstance.navigate.bind(routerInstance));
 
 routerInstance.start();
