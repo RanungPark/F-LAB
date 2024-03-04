@@ -39,9 +39,19 @@ class Router {
     Router.checkRoutes(this.routes);
   }
 
-  navigate(path) {
+  changePath(path) {
     history.pushState({}, '', path);
     Router.checkRoutes(this.routes);
+  }
+
+  navigate(e) {
+    const { target } = e
+    e.preventDefault();
+    if (target.matches("[data-navigate]")) {
+      this.changePath(e.target.getAttribute("data-navigate"));
+    } else if (target.matches('a')) {
+      this.changePath(e.target.href);
+    }
   }
 }
 
