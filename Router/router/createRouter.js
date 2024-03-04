@@ -14,7 +14,7 @@ function createRouter({ $target }) {
     },
     {
       path: '/blog/:name/:page',
-      element: ({ name, page }) => $target.innerText = `${name} ${page}page`,
+      element: ({ name, page }) => new Blog({ $target, name, page }).render(),
     },
   ]);
 
