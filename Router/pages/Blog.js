@@ -1,10 +1,17 @@
 class Blog {
-  constructor({ $target }) {
-
+  constructor({ $target, name = null, page = null }) {
     const $page = document.createElement('div')
     $page.className = 'Blog'
 
-    $page.innerHTML = '<h1>Blog</h1>'
+    if (name !== null && page !== null) {
+      $page.innerHTML = `
+      <h1>Blog</h1>
+      <p>${name}블로그</p>
+      <p>${page}page</p>
+      `
+    } else {
+      $page.innerHTML = `<h1>Blog</h1>`
+    }
 
     this.render = () => {
       if ($target.firstChild) {
