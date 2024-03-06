@@ -1,13 +1,13 @@
-class Router {
-  constructor(routes) {
-    this.routes = routes;
-  }
+export default function Router(routes) {
+  // const routes = [];
+  const TICK = 50000;
+  const PATH_PARAMETER = /:([^/]+)/g;
+  const CHANGE_PARAMETER = '([^/]+)';
 
-  static matchPathParameters(currentPath, routePath) {
+  function matchPathParameters(currentPath, routePath) {
     const params = {};
     const currentPathSections = currentPath.split('/');
     const routePathSections = routePath.split('/');
-
     routePathSections.forEach((routePathSection, i) => {
       if (routePathSection.startsWith(':')) {
         const paramName = routePathSection.substring(1);
@@ -17,42 +17,51 @@ class Router {
     return params;
   }
 
-  static checkRoutes(routes) {
-    const PATH_PARAMETER = /:([^/]+)/g;
-    const CHANGE_PARAMETER = '([^/]+)';
+  const checkRoutes = () => {
     const { pathname } = location;
-    const currentRoutes = routes.find(route => {
+    const currentRoute = routes.find(route => {
       const routePath = route.path.replace(PATH_PARAMETER, CHANGE_PARAMETER);
       const regex = new RegExp(`^${routePath}$`);
       return regex.test(pathname);
     });
-    if (currentRoutes === pathname) {
-      currentRoutes.element();
-    } else {
-      const params = Router.matchPathParameters(pathname, currentRoutes.path);
-      currentRoutes.element(params);
+    if (currentRoute) {
+      if (currentRoute.path === pathname) {
+        currentRoute.element();
+      } else {
+        const params = matchPathParameters(pathname, currentRoute.path);
+        currentRoute.element(params);
+      }
     }
   }
 
-  start() {
-    window.addEventListener('popstate', () => Router.checkRoutes(this.routes));
-    Router.checkRoutes(this.routes);
-  }
+  const router = {
+    start() {
+      window.addEventListener('popstate', () => checkRoutes());
+      checkRoutes();
+      window.setInterval(() => {
+        checkRoutes();
+      }, TICK)
+    },
 
-  changePath(path) {
-    history.pushState({}, '', path);
-    Router.checkRoutes(this.routes);
-  }
+    changePath(path) {
+      history.pushState({}, '', path);
+      checkRoutes();
+    },
 
-  navigate(e) {
-    const { target } = e
-    e.preventDefault();
-    if (target.matches("[data-navigate]")) {
-      this.changePath(e.target.getAttribute("data-navigate"));
-    } else if (target.matches('a')) {
-      this.changePath(e.target.href);
-    }
-  }
+    navigate(e) {
+      const { target } = e
+      e.preventDefault();
+      if (target.matches("[data-navigate]")) {
+        router.changePath(e.target.getAttribute("data-navigate")); // Fixed here
+      } else if (target.matches('a')) {
+        router.changePath(e.target.href); // Fixed here
+      }
+    },
+
+    // addRouter(route) {
+
+    // },
+  };
+
+  return router;
 }
-
-export default Router;

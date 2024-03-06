@@ -2,8 +2,14 @@ import Home from '../pages/Home.js';
 import Blog from '../pages/Blog.js'
 import Router from './Router.js';
 
+/**
+ * 보기가 힘들다.
+ * 1. path 추가
+ * 2. 
+ */
+
 function createRouter({ $target }) {
-  const router = new Router([
+  const router = Router([
     {
       path: '/',
       element: () => new Home({ $target }).render(),
@@ -22,3 +28,8 @@ function createRouter({ $target }) {
 }
 
 export default createRouter
+
+
+/**
+ * as is
+ */
