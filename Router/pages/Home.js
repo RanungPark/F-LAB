@@ -1,17 +1,17 @@
 class Home {
-  constructor({ $target }) {
-    const $page = document.createElement('div')
-    $page.className = 'Home'
-    $page.innerHTML =
+  constructor({ targetElement }) {
+    const contentElement = document.createElement('div')
+    contentElement.className = 'Home'
+    contentElement.innerHTML =
       `<h1>Home</h1>
       <p>홈 화면입니다.</p>
     `
 
     this.render = () => {
-      if ($target.firstChild) {
-        $target.removeChild($target.firstChild);
+      if (targetElement.firstChild) {
+        targetElement.removeChild(targetElement.firstChild);
       }
-      $target.appendChild($page);
+      targetElement.appendChild(contentElement);
     }
   }
 }
