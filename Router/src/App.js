@@ -1,8 +1,24 @@
-import createRouter from '../router/createRouter.js';
+import Home from '../pages/Home.js';
+import Blog from '../pages/Blog.js';
+import Router from '../router/Router.js';
 
-const container = document.querySelector(".App");
+const targetElement = document.querySelector(".App");
 
-const routerInstance = createRouter({ targetElement: container })
+const router = Router();
+
+document.addEventListener('click', router.navigate);
+
+router.addRouter({
+  path: '/',
+  element: () => Home({ targetElement })(),
+}).addRouter({
+  path: '/blog',
+  element: () => Blog({ targetElement })(),
+}).addRouter({
+  path: '/blog/:name/:page',
+  element: ({ name, page }) => Blog({ targetElement, name, page })(),
+}).start();
+
 
 /**
  * 100 lines
@@ -19,11 +35,3 @@ const routerInstance = createRouter({ targetElement: container })
 /**
  * 2. callback
  */
-
-document.addEventListener('click', routerInstance.navigate);
-
-/**
- * 100 lines
- */
-
-routerInstance.start();
