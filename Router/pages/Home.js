@@ -1,19 +1,19 @@
-class Home {
-  constructor({ targetElement }) {
-    const contentElement = document.createElement('div')
-    contentElement.className = 'Home'
-    contentElement.innerHTML =
-      `<h1>Home</h1>
-      <p>홈 화면입니다.</p>
-    `
+import Header from '../compoents/Header.js';
 
-    this.render = () => {
-      if (targetElement.firstChild) {
-        targetElement.removeChild(targetElement.firstChild);
-      }
-      targetElement.appendChild(contentElement);
+function Home({ targetElement }) {
+  const contentElement = document.createElement('div');
+  contentElement.className = 'Home';
+  Header({ contentElement });
+
+
+  const render = () => {
+    if (targetElement.firstChild) {
+      targetElement.removeChild(targetElement.firstChild);
     }
+    targetElement.appendChild(contentElement);
   }
+
+  return render;
 }
 
-export default Home
+export default Home;
