@@ -1,6 +1,6 @@
-export default function Router(routes) {
-  // const routes = [];
-  const TICK = 50000;
+export default function Router() {
+  const routes = [];
+  const TICK = 5000;
   const PATH_PARAMETER = /:([^/]+)/g;
   const CHANGE_PARAMETER = '([^/]+)';
 
@@ -58,9 +58,10 @@ export default function Router(routes) {
       }
     },
 
-    // addRouter(route) {
-
-    // },
+    addRouter(route) {
+      routes.push(route)
+      return this;
+    },
   };
 
   return router;
