@@ -1,0 +1,16 @@
+.article {
+  top: 60px;
+  width: 100%;
+  max-width: 980px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.article_img {
+  width: 640px;
+  height: 320px;
+}
+
+.article_wapper {
+  margin: 32px;
+}
