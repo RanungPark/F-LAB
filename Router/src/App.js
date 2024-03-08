@@ -1,11 +1,12 @@
 import Router from './router/Router.js';
-import Home from './pages/Home.js';
-import Blog from './pages/Blog.js';
-import { worker } from './mocks/server.js';
+import TechPage from './pages/TechPage.js';
+import DesignPage from './pages/DesignPage.js';
+import ArticlePage from './pages/ArticlePage.js';
+// import { worker } from './mocks/server.js';
 
-if (process.env.NODE_ENV === "development") {
-  worker.start();
-}
+// if (process.env.NODE_ENV === "development") {
+//   worker.start();
+// }
 
 const targetElement = document.querySelector(".App");
 
@@ -15,18 +16,24 @@ document.addEventListener('click', router.navigate);
 
 router.addRouter({
   path: '/',
-  element: () => Home({ targetElement })(),
+  element: () => TechPage({ targetElement })(),
 }).addRouter({
-  path: '/blog',
-  element: () => Blog({ targetElement })(),
+  path: '/tech',
+  element: () => TechPage({ targetElement })(),
 }).addRouter({
-  path: '/blog/:name/:page',
-  element: ({ name, page }) => Blog({ targetElement, name, page })(),
+  path: '/design',
+  element: () => DesignPage({ targetElement })(),
+}).addRouter({
+  path: '/tech/article/:id',
+  element: ({ id }) => ArticlePage({ targetElement, id })(),
+}).addRouter({
+  path: '/design/article/:id',
+  element: ({ id }) => ArticlePage({ targetElement, id })(),
 }).start();
 
-const a = fetch("/tech")
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+//  fetch("/tech")
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
 
 /**
  * 100 lines
