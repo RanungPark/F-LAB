@@ -1,6 +1,11 @@
-import Home from '../pages/Home.js';
-import Blog from '../pages/Blog.js';
-import Router from '../router/Router.js';
+import Router from './router/Router.js';
+import Home from './pages/Home.js';
+import Blog from './pages/Blog.js';
+import { worker } from './mocks/server.js';
+
+if (process.env.NODE_ENV === "development") {
+  worker.start();
+}
 
 const targetElement = document.querySelector(".App");
 
@@ -19,6 +24,9 @@ router.addRouter({
   element: ({ name, page }) => Blog({ targetElement, name, page })(),
 }).start();
 
+const a = fetch("/tech")
+  .then((response) => response.json())
+  .then((data) => console.log(data));
 
 /**
  * 100 lines
