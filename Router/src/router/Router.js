@@ -38,9 +38,9 @@ export default function Router() {
     start() {
       window.addEventListener('popstate', () => checkRoutes());
       checkRoutes();
-      window.setInterval(() => {
-        checkRoutes();
-      }, TICK)
+      // window.setInterval(() => {
+      //   checkRoutes();
+      // }, TICK)
     },
 
     changePath(path) {
