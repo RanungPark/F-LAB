@@ -31,9 +31,6 @@ router.addRouter({
   element: ({ id }) => ArticlePage({ targetElement, id })(),
 }).start();
 
-//  fetch("/tech")
-//   .then((response) => response.json())
-//   .then((data) => console.log(data));
 
 /**
  * 100 lines
