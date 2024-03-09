@@ -7,10 +7,10 @@ function Header({ contentElement }) {
       </div>
       <ul class='navbar_list'>
         <li class='navbar_item'>
-          <a>디자인</a>
+          <a href='/design'>디자인</a>
         </li>
         <li class='navbar_item'>
-          <a>개발</a>
+          <a href='/tech'>개발</a>
         </li>
         <li class='navbar_item'>
           <button class='btn'>채용 바로가기</button>
