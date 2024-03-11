@@ -13,15 +13,33 @@
 
 .navbar_content {
   width: 1140px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
 }
 
 .navbar_logo {
-  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbar_logo span {
+  display: block;
+  font-size: 20px;
+  color: #202632;
+}
+
+.log_bold {
+  font-weight: 700;
+  margin-right: 2px;
+}
+
+.log_img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-right: 2px;
 }
 
 .navbar_list {
