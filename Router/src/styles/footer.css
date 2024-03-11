@@ -1,0 +1,49 @@
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_wapper {
+  width: 980px;
+  margin: 64px 0;
+  height: 400px;
+  font-size: 14px;
+}
+
+.footer_connect_wapper {
+  display: flex;
+  margin-bottom: 32px;
+}
+.footer_connect_title {
+  font-weight: 700;
+  margin-right: 128px;
+}
+
+.footer_connect span {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer_info {
+  margin-bottom: 96px;
+}
+.footer_info span {
+  display: block;
+}
+
+.footer_info_title {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.blog {
+  display: flex;
+  align-items: center;
+}
+.blog img {
+  display: block;
+  margin-right: 8px;
+}
