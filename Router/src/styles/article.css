@@ -4,13 +4,30 @@
   max-width: 980px;
   position: relative;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
 }
 
 .article_img {
+  display: block;
   width: 640px;
   height: 320px;
+  border-radius: 16px;
 }
 
 .article_wapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin: 32px;
+  width: 644px;
+}
+
+.article_title {
+  display: block;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-top: 16px;
 }
