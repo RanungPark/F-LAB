@@ -1,0 +1,35 @@
+.section {
+  width: 100%;
+  background-color: #191f28;
+  height: 306px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.section_img {
+  display: block;
+  margin-right: 16px;
+  width: 186px;
+  height: 186px;
+}
+
+.section_title {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.section_sentence span{
+  display: block;
+  color: white;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.section_content button {
+  margin-top: 16px;
+}
