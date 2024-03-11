@@ -619,3 +619,11 @@ export const designDatas = [
     date: "2022. 9. 21"
   }
 ]
+
+export const blogData = {
+  facebook: `https://static.toss.im/assets/homepage/safety/icn-facebook.svg`,
+  blog: `https://static.toss.im/assets/homepage/safety/icn-blog.svg`,
+  naver: `https://static.toss.im/assets/homepage/safety/icn-naver.svg`,
+  twitter: `https://static.toss.im/assets/homepage/safety/icn-twitter.svg`,
+  instagram: `https://static.toss.im/assets/homepage/safety/icn-instagram.svg`,
+}
