@@ -53,8 +53,8 @@ export default function Router() {
       e.preventDefault();
       if (target.matches("[data-navigate]")) {
         router.changePath(e.target.getAttribute("data-navigate"));
-      } else if (target.matches('a')) {
-        router.changePath(e.target.href);
+      } else if (target.closest('a')) {
+        router.changePath(target.closest('a').href);
       }
     },
 
