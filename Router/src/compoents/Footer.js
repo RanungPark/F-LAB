@@ -36,9 +36,13 @@ async function Footer({ contentElement }) {
   const blogElement = document.createElement('div');
   blogElement.className = 'blog';
 
-  for (const key in blogData) {
-    BlogImg({ blogElement, imagePath: blogData[key] })
-  }
+  fetch('../../public/data/blogdatas.json')
+    .then((response) => response.json())
+    .then((response) => {
+      for (const key in response.data) {
+        BlogImg({ blogElement, imagePath: blogData[key] })
+      }
+    })
 
   footerWapperElement.appendChild(blogElement);
   footerElement.appendChild(footerWapperElement);
