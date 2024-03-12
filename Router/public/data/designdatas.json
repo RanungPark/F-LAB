@@ -1,0 +1,298 @@
+{
+  "data": [
+    {
+        "id": 1,
+        "title": "토스 디자이너가 제품에만 집중할 수 있는 방법",
+        "content": "디자인 시스템은 제품의 어느 단계까지 기여할 수 있을까요? 더 이상 다른 것에는 신경쓰지 않아도 되는 Menu 컴포넌트를 만들었던 3가지 방법을 소개할게요.",
+        "imagePath": "https://static.toss.im/assets/toss-tech/soohyeon-테크블로그-썸네일.png",
+        "date": "2024. 3. 5"
+    },
+    {
+        "id": 2,
+        "title": "모티베이션을 디자인하기",
+        "content": "UX Writing Team이 ‘스스로 참여하고 싶은 프로그램 만들기’라는 모호한 문제에 접근한 방법을 소개해 드릴게요.",
+        "imagePath": "https://static.toss.im/lotties/20240216-blog-본문썸네일.png",
+        "date": "2024. 2. 26"
+    },
+    {
+        "id": 3,
+        "title": "이런 것도 컴포넌트로 만들어도 될까?",
+        "content": "플랫폼 디자이너가 디자인 시스템에 새로운 컴포넌트를 만들 때 생기는 의심을 확신으로 만든 과정을 들려드릴게요.",
+        "imagePath": "https://static.toss.im/illusts/20240215-테크블로그_본문썸네일.png",
+        "date": "2024. 2. 19"
+    },
+    {
+        "id": 4,
+        "title": "UX 리서처로의 시작과 성장: UX 리서치 파트너 이야기",
+        "content": "UX Research Partner로 입사해 유저 리서치팀에 온보딩했던 과정과 온보딩 후 어떻게 일하고 있는지 들려드릴게요.",
+        "imagePath": "https://static.toss.im/assets/toss-tech/20240214-테크블로그_본문썸네일.png",
+        "date": "2024. 2. 15"
+    },
+    {
+        "id": 5,
+        "title": "UX 리서처, 신입은 어디에서 경력을 쌓나요?",
+        "content": "유저 리서치 팀에서는 처음으로 신입 리서처를 채용했어요. 새롭게 설계한 채용 과정을 소개할게요.",
+        "imagePath": "https://static.toss.im/illusts-common/research_blog.png",
+        "date": "2024. 1. 30"
+    },
+    {
+        "id": 6,
+        "title": "송금할 때 은행 이름을 꼭 입력해야 할까요?",
+        "content": "계좌번호를 입력하면 은행을 추천해주는 역발상으로 송금 UX를 송두리째 바꾼 이야기를 들려드릴게요.",
+        "imagePath": "https://static.toss.im/assets/toss-tech/design-article-toss-money-transfer-bank-recommendation.png",
+        "date": "2024. 1. 3"
+    },
+    {
+        "id": 7,
+        "title": "토스의 AI 그래픽 생성기, 토스트를 소개합니다 #2",
+        "content": "Part 2. 토스에서는 토스트를 실제로 어떻게 활용하나요?",
+        "imagePath": "https://static.toss.im/ml-product/tosst-part2-thumb.jpg",
+        "date": "2023. 12. 22"
+    },
+    {
+        "id": 8,
+        "title": "토스의 AI 그래픽 생성기, 토스트를 소개합니다 #1",
+        "content": "Part 1. 토스트, 이렇게 만들었어요",
+        "imagePath": "https://static.toss.im/ml-product/tosst-part1-thumbnails.jpg",
+        "date": "2023. 12. 21"
+    },
+    {
+        "id": 9,
+        "title": "토스에서 하루 만에 제품 출시하는 법",
+        "content": "모든 토스 디자이너가 사용하는 제품, 하루 만에 만들 수 있을까요?",
+        "imagePath": "https://static.toss.im/assets/toss-tech/tech-blog-launch-in-one-day.png",
+        "date": "2023. 12. 11"
+    },
+    {
+        "id": 10,
+        "title": "독이 되는 레퍼런스 활용법",
+        "content": "매혹적이지만 독이 될 수 있는 레퍼런스. 어떻게 활용하는 것이 좋을까요?",
+        "imagePath": "https://static.toss.im/assets/homepage/tosstech/og/design-article-15-og.png",
+        "date": "2023. 11. 27"
+    },
+    {
+        "id": 11,
+        "title": "효율적인 유저 리서치 환경을 만드는 리서치 플랫폼 팀, 들어보셨나요?",
+        "content": "토스팀에서 팀원들이 사용자를 더 쉽고, 빠르고, 편하게 만날 수 있도록 고군분투하고 있는 ‘리서치 플랫폼 팀’에 대해 소개해 보려고 해요.",
+        "imagePath": "https://static.toss.im/illusts/tech-research-platform-og-image.png",
+        "date": "2023. 11. 23"
+    },
+    {
+        "id": 12,
+        "title": "완성 없는 이야기, 가입 과정 개선",
+        "content": "가입 완료율을 높이기 위해 고민하고 시도했던 것들을 이야기 해요.",
+        "imagePath": "https://static.toss.im/simplicity23/graphics/sim23-signup-cover.png",
+        "date": "2023. 9. 12"
+    },
+    {
+        "id": 13,
+        "title": "인터랙션, 꼭 넣어야 해요?",
+        "content": "빠른 속도를 중요시하는 토스에서 어떻게 팀원들을 인터랙션에 공감하게 하고 슬릭한 제품을 만들어나갈 수 있었는지 소개할게요.",
+        "imagePath": "https://static.toss.im/simplicity23/graphics/sim23-interaction-cover.png",
+        "date": "2023. 9. 7"
+    },
+    {
+        "id": 14,
+        "title": "크고 복잡한 제품, 과감하게 갈아엎기",
+        "content": "디자이너들도 어떻게 하면 빠른 속도를 내며 전체적인 경험을 맞출 수 있을지 매 순간 고민하고 있어요.",
+        "imagePath": "https://static.toss.im/career-resource/sim23-mydoc-cover.png",
+        "date": "2023. 9. 3"
+    },
+    {
+        "id": 15,
+        "title": "30대 디자이너가 10대 전용 카드를 만든다면?",
+        "content": "'요즘 10대는 어떤 카드를 좋아할까?', '30대인 내가 10대 친구들이 좋아하는 디자인을 할 수 있을까?' 청소년 전용 카드를 만들며 맞닥뜨렸던 혹독한 진실과, 그 과정에서 얻은 인사이트를 공유하고 싶어요.",
+        "imagePath": "https://static.toss.im/assets/toss-tech/sim23-uss.png",
+        "date": "2023. 8. 23"
+    },
+    {
+        "id": 16,
+        "title": "슬랙봇 디자인 101",
+        "content": "슬랙봇 디자인을 잘 하려면 무엇을 알아야하는지 알려드릴게요.",
+        "imagePath": "https://static.toss.im/career-resource/slackbot101.png",
+        "date": "2023. 8. 17"
+    },
+    {
+        "id": 17,
+        "title": "프로덕트 브랜딩, 어떻게 시작해야할까?",
+        "content": "처음 프로덕트 브랜딩 팀이 만들어졌을 때, 어떻게 팀의 정체성을 찾아나갔는지 공유할게요.",
+        "imagePath": "https://static.toss.im/assets/toss-tech/cover-1st-product-brand-designer.png",
+        "date": "2023. 8. 10"
+    },
+    {
+        "id": 18,
+        "title": "토스의 이모지 폰트, 토스페이스 제작기",
+        "content": "세계적인 IT 기업에서나 만드는 이모지 폰트를 어떻게 한국 금융 플랫폼 토스에서 만들게 됐을까? 토스의 이모지 폰트, 토스페이스 제작의 모든 것을 공개합니다.",
+        "imagePath": "https://static.toss.im/3d/tossface-part-thumbnail.png",
+        "date": "2023. 7. 17"
+    },
+    {
+        "id": 19,
+        "title": "토스 최초의 Product Designer(Tools)의 일하는 방식",
+        "content": "토스팀에서 첫 Product Designer (Tools) 직무로 일하기 시작하면서 어떤 걸 배웠는지 알려드릴게요.",
+        "imagePath": "https://static.toss.im/illusts/tools-designer-cover.jpg",
+        "date": "2023. 6. 20"
+    },
+    {
+        "id": 20,
+        "title": "Simplicity23, 오늘도 문제를 해결하고 있을 모든 디자이너에게",
+        "content": "토스 디자인 컨퍼런스 사전 신청 오픈 (5.15~5.21)",
+        "imagePath": "https://static.toss.im/career-resource/thumnail_simplicity_techblog.png",
+        "date": "2023. 5. 15"
+    },
+    {
+        "id": 21,
+        "title": "첫 인터랙션 디자이너가 문제를 해결하는 법",
+        "content": "처음 입사했을 때 인터랙션 디자이너의 역할에 대해 막연하게 느꼈을 때가 있었어요. 하지만 제품의 문제를 하나씩 해결하면서 저의 역할을 정의해나갈 수 있었어요. 어떤 시행착오가 있었는지 공유해 드릴게요.",
+        "imagePath": "https://static.toss.im/assets/toss-tech/cover-1st-interactiondesigner.png",
+        "date": "2023. 5. 4"
+    },
+    {
+        "id": 22,
+        "title": "리서치를 하고 싶어하는 사람을 리서치하세요",
+        "content": "입사하자마자 사용자가 아닌 동료들부터 인터뷰했던 이유. 토스의 첫 UX 리서처로 자리잡아 갔던 과정을 소개할게요.",
+        "imagePath": "https://static.toss.im/assets/toss-tech/research_main.png",
+        "date": "2023. 4. 27"
+    },
+    {
+        "id": 23,
+        "title": "첫 그래픽 디자이너가 했던 가장 비효율적인 일",
+        "content": "첫 번째 그래픽 디자이너로 입사해서 자리잡기까지의 여정과, 그래픽 디자이너만의 노하우를 알려드려요.",
+        "imagePath": "https://static.toss.im/assets/toss-tech/00074-3438188018.png",
+        "date": "2023. 4. 20"
+    },
+    {
+        "id": 24,
+        "title": "첫 UX writer는 무슨 일을 해야 할까",
+        "content": "이게 정말 UX writer만 할 수 있는 일일까? 내가 해야 하는 일이 이것일까? 생각했을 때 확신이 없었어요. 일단은 모든 업무를 가리지 않고 다 받아서 무작정 열심히 처리했었죠.",
+        "imagePath": "https://static.toss.im/assets/toss-tech/webthumbnail.png",
+        "date": "2023. 4. 14"
+    },
+    {
+        "id": 25,
+        "title": "내 아이디어를 너무 믿지 마세요",
+        "content": "너무 좋은 아이디어라고 생각해서 만들었는데 실제 유저들의 반응은 정반대였어요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2023/03/design-article-14-og.png",
+        "date": "2023. 3. 28"
+    },
+    {
+        "id": 26,
+        "title": "추천할 때는 제일 좋은 것 하나면 된다",
+        "content": "제품을 만들 때, 사용자의 고민을 덜어주는 것이 중요해요. 사용자에게는 어떤 선택지를 주는 것이 좋을까요?",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2023/03/thumbnail-03.png",
+        "date": "2023. 3. 23"
+    },
+    {
+        "id": 27,
+        "title": "토스 디자인 원칙 Value first, Cost later",
+        "content": "토스의 제품 디자인 원칙 중에는 Value first, cost later라는 항목이 있어요. 비용을 말하기 전에 가치를 명확하게 전달해야한다는 내용이에요. 가치를 먼저 보여주는 것 만으로도 지표를 눈에 띄게 개선한 사례를 소개해드릴게요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2023/03/og-image-1.png",
+        "date": "2023. 3. 16"
+    },
+    {
+        "id": 28,
+        "title": "디자이너가 새로운 도메인을 빠르게 학습하는 법",
+        "content": "토스는 일이 굉장히 빠르게 돌아가는 조직이에요. 저는 1년 반 동안 무려 4개의 새로운 분야를 학습해야 했어요. 이때 제가 쓴 방법들을 알려드릴게요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2023/03/og-image.png",
+        "date": "2023. 3. 7"
+    },
+    {
+        "id": 29,
+        "title": "문제 원인의 원인을 찾아서",
+        "content": "좋은 해결책을 내기 위해서 제가 쓰는 방법은, 문제 원인의 원인을 찾는 거예요. 진짜 문제를 발견하면, 임팩트 있는 해결책을 생각해 낼 확률이 훨씬 높아지죠.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2023/03/Frame-46.png",
+        "date": "2023. 3. 2"
+    },
+    {
+        "id": 30,
+        "title": "우리에게 당연하지만 사용자는 아닌 것들",
+        "content": "사용자 관점에서 본다는 게 엄청난 게 아닌데도, 왠지 엄청난 것으로 개선해야 할 것 같은 느낌이 들 때도 있죠. 그래서 오늘은 사용자 관점을 활용해 개선한 굉장히 가벼운 사례들을 가져와봤어요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2023/01/d-TechBlog-Image-3.png",
+        "date": "2023. 1. 19"
+    },
+    {
+        "id": 31,
+        "title": "잘 만든 시스템 하나로 미친 효율 얻는 방법",
+        "content": "‘원래 하던 일’을 단순히 똑같이 해내는 것이 아니라, ‘더 잘하게 만드는 도구’를 만들어서 원래 하던 일을 훨씬 더 빠른 속도로 해낼 수 있어요. 효율이 복리로 쌓이게 만드는 거죠.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2023/01/본문.png",
+        "date": "2023. 1. 12"
+    },
+    {
+        "id": 32,
+        "title": "사용자 3명인 제품, 만들어야 할까?",
+        "content": "사용자가 3명 뿐인 제품, 쓰는 사람이 적으면 개선을 하지 말아야 할까요? 토스 콘텐츠 시스템(TCS)을 만들면서, 최소한의 비용으로 최대한의 효율을 내기 위해 고민했던 지점들을 소개해드려요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2022/12/스크린샷-2022-12-22-오후-4.19.28.png",
+        "date": "2022. 12. 22"
+    },
+    {
+        "id": 33,
+        "title": "토스 디자인 원칙, Easy to answer",
+        "content": "토스에는 좋은 제품을 만들기 위한 디자인 원칙들이 있어요. 오늘은 그 중에 easy to answer라는 항목을 적용해서 제품을 개선한 사례를 소개해드릴게요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2022/12/Columns.png",
+        "date": "2022. 12. 14"
+    },
+    {
+        "id": 34,
+        "title": "플랫폼 디자이너가 효율을 만들어내는 법",
+        "content": "수많은 가짓수들을 단순히 더하기로 추가하는 것이 아니라 곱하기로 확장하면서 극단적인 효율과 심미성까지 챙겼던 과정들을 플로우차트 제작 프로젝트를 예시로 소개해드릴게요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2022/12/flowchartTN.png",
+        "date": "2022. 12. 8"
+    },
+    {
+        "id": 35,
+        "title": "토스에 처음 입사한 디자이너를 위한 온보딩 프로그램",
+        "content": "토스 디자인 챕터는 온보딩을 위한 다양한 프로그램이 있어요. 디자이너가 직접 설계한 디자이너 온보딩, 어떤 것들을 신경 썼는지 하나씩 소개해드릴게요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2022/12/design-article-1201-2.png",
+        "date": "2022. 12. 1"
+    },
+    {
+        "id": 36,
+        "title": "직접 만지고, 돌리는 토스뱅크카드 인터랙션",
+        "content": "토스뱅크카드의 중요한 디자인 컨셉은 앞면과 뒷면의 색상이 다르다는 것인데요. 지금까지는 이 정보를 표현하기 위해서 이미지를 두 장 쓰거나, 영상을 만들었죠. 하지만 그걸로는 부족했어요. 저는 모바일 화면에서도 실물 카드를 보는 것과 똑같은 경험을 만들고 싶었어요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2022/11/DesignTech-0-img.png",
+        "date": "2022. 11. 24"
+    },
+    {
+        "id": 37,
+        "title": "토스의 8가지 라이팅 원칙들",
+        "content": "토스의 문구는 8가지 라이팅 원칙을 고려하면서 쓰고 있어요. 사람이 말하는 것 같은 문장을 지향하면서요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2022/11/썸네일.png",
+        "date": "2022. 11. 15"
+    },
+    {
+        "id": 38,
+        "title": "가이드라인을 시스템으로 만드는 법",
+        "content": "UX 라이팅은 한 명이 아닌, 팀원 모두가 잘 쓰는 게 중요해요. 이전까지는 세션이나 가이드라인 등의 방법으로 이 문제를 접근해왔지만, 토스는 조금 다르게 풀어봤어요. 시스템으로요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2022/11/Screen-Shot-2022-11-04-at-5.34.15-PM.png",
+        "date": "2022. 11. 4"
+    },
+    {
+        "id": 39,
+        "title": "2초만에 불필요한 클릭 없애는 4가지 방법",
+        "content": "토스 앱에는 little big detail 이 많은데요, 그중 하나를 소개하고 싶어요. 바로 불필요한 클릭 없애는 방법이에요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2022/09/design-article-5-thumbnail.png",
+        "date": "2022. 10. 20"
+    },
+    {
+        "id": 40,
+        "title": "경험이 부족한 나도 토스에 지원해도 될까?",
+        "content": "이력서, 포트폴리오가 아닌 과제 중심으로 역량을 평가한 프로덕트 디자이너 챌린지. 신입이라 선뜻 지원을 못했었는데, 챌린지를 통해 입사할 수 있었어요. 챌린지에 참여하게 된 계기와 문제를 해결하면서 고민했던 부분들, 장표를 어떻게 구성했는지까지 자세한 후기를 공유해드릴게요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2022/10/design-article-4-thumbnail.png",
+        "date": "2022. 10. 4"
+    },
+    {
+        "id": 41,
+        "title": "디자이너의, 디자이너에 의한, 디자이너를 위한 채용 설계하기",
+        "content": "디자이너가 디자이너 채용을 기획한다면 어떻게 될까요? 프로덕트 디자이너 챌린지는 지원자인 디자이너의 입장에서 기획한 채용이에요. 회사가 어떻게 지원자를 검증할지만 생각한 게 아니라, 어떻게 하면 지원자의 역량을 잘 끌어낼 수 있을지 생각하며 3가지 방법을 선택했어요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2022/09/2022_pd_og.jpg",
+        "date": "2022. 9. 22"
+    },
+    {
+        "id": 42,
+        "title": "좋은 에러 메시지를 만드는 6가지 원칙",
+        "content": "좋은 에러 메시지란, 사용자가 다음 단계로 갈 수 있게 돕는 메시지예요. 사용자가 다음 단계로 가기 위해 필요한 내용은 어떤 것들이 있을까요? 토스는 6가지 에러 메시지 원칙을 생각하며 문구를 쓰고 있어요.",
+        "imagePath": "https://wp.toss.tech/wp-content/uploads/2022/09/design-article-2-thumbnail.png",
+        "date": "2022. 9. 21"
+    }
+]
+}
