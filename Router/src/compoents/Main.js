@@ -15,23 +15,22 @@ function Main({ contentElement }) {
   `
   mainElement.appendChild(ListElement);
 
-  pathname === '/' || pathname === '/tech' ?
-    fetch('../../public/data/techdatas.json')
-      .then((response) => response.json())
-      .then((response) => {
-        response.data.map(({ id, title, content, imagePath, date }) => Item({
-          ListElement, id, title, content, imagePath, date, pathname
-        }))
-      })
-    : fetch('../../public/data/designdatas.json')
-      .then((response) => response.json())
-      .then((response) => {
-        response.data.map(({ id, title, content, imagePath, date }) => Item({
-          ListElement, id, title, content, imagePath, date, pathname
-        }))
-      });
+  const url = pathname === '/' || pathname === '/tech' ? '../../public/data/techdatas.json' : '../../public/data/designdatas.json';
+
+  fetchFun(url, ListElement, pathname)
 
   contentElement.appendChild(mainElement);
+}
+
+
+function fetchFun(url, ListElement, pathname) {
+  return fetch(url)
+    .then((response) => response.json())
+    .then((response) => {
+      response.data.map(({ id, title, content, imagePath, date }) => Item({
+        ListElement, id, title, content, imagePath, date, pathname
+      }));
+    });
 }
 
 export default Main;
