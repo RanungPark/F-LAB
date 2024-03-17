@@ -7,11 +7,13 @@ function TechPage({ targetElement }) {
   const contentElement = document.createElement('div');
   contentElement.className = 'techPage';
 
-  Header({ contentElement });
-  Main({ contentElement });
-  Section({ contentElement });
-  Footer({contentElement});
-
+  Promise.resolve(Header({ contentElement }))
+    .then(Main({ contentElement }))
+    .then(Section({ contentElement }))
+    .then(Footer({ contentElement }))
+    .catch((error) => {
+      console.error('Error render :', error);
+    });
 
   const render = () => {
     if (targetElement.firstChild) {
