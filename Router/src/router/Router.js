@@ -44,6 +44,7 @@ export default function Router() {
     },
 
     changePath(path) {
+      window.scrollTo(0, 0)
       history.pushState({}, '', path);
       checkRoutes();
     },
