@@ -1,28 +1,8 @@
 import Main from '../compoents/Main.js';
-import Header from '../compoents/Header.js';
-import Section from '../compoents/Section.js';
-import Footer from '../compoents/Footer.js';
+import createPage from '../helpers/createPage.helpers.js';
 
 function DesignPage({ targetElement }) {
-  const contentElement = document.createElement('div');
-  contentElement.className = 'designPage';
-
-  Promise.resolve(Header({ contentElement }))
-    .then(Main({ contentElement }))
-    .then(Section({ contentElement }))
-    .then(Footer({ contentElement }))
-    .catch((error) => {
-      console.error('Error render :', error);
-    });
-
-  const render = () => {
-    if (targetElement.firstChild) {
-      targetElement.removeChild(targetElement.firstChild);
-    }
-    targetElement.appendChild(contentElement);
-  }
-
-  return render;
+  return createPage({ targetElement, tag: 'div', className: 'designPage' }, Main)
 }
 
 export default DesignPage;

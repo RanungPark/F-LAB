@@ -1,31 +1,18 @@
-import Header from '../compoents/Header.js';
-import Aritcle from '../compoents/Article.js';
-import { designDatas, techDatas } from '../mocks/data.js';
-import Section from '../compoents/Section.js';
-import Footer from '../compoents/Footer.js';
+import { dataPath } from '../common/dataPath.js';
+import Article from '../compoents/Article.js';
+import createPage from '../helpers/createPage.helpers.js';
 
 function ArticlePage({ targetElement, id = null }) {
   const { pathname } = location;
-  const { title, imagePath } = pathname === `/tech/article/${id}` ? techDatas[id - 1] : designDatas[id - 1];
+  const path = pathname === `/tech/article/${id}` ? dataPath.techDatas : dataPath.designDatas;
 
-  const contentElement = document.createElement('div');
-  contentElement.className = 'articlePage';
-
-  Promise.resolve(Header({ contentElement }))
-    .then(Aritcle({ contentElement, title, imagePath }))
-    .then(Section({ contentElement }))
-    .then(Footer({ contentElement }))
-    .catch((error) => {
-      console.error('Error render :', error);
-    });
-
-  const render = () => {
-    if (targetElement.firstChild) {
-      targetElement.removeChild(targetElement.firstChild);
-    }
-    targetElement.appendChild(contentElement);
-  }
-  return render;
+  fetch(path)
+    .then((response) => response.json())
+    .then((response) => {
+      console.log(response.data)
+      const { title, imagePath } = response.data[id - 1]
+      return createPage({ targetElement, tag: 'div', className: 'articlePage' }, Article, title, imagePath)
+    })
 }
 
 export default ArticlePage;
