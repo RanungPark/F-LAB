@@ -1,8 +1,10 @@
+import { createElementHelper } from '../helpers/element.helpers.js';
+
 function BlogImg({ blogElement, imagePath }) {
-  const imgElement = document.createElement('img');
-  imgElement.className = 'blog_img'
+  const imgElement = createElementHelper('img', 'blog_img');
+
   imgElement.srcset = `${imagePath}`;
- 
+
   blogElement.appendChild(imgElement);
 }
 

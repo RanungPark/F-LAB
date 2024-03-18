@@ -1,9 +1,9 @@
-function Aritcle({ contentElement, title, imagePath }) {
-  const divElement = document.createElement('div');
-  divElement.className = 'article'
+import { createElementHelper } from '../helpers/element.helpers.js';
 
-  divElement.innerHTML =
-    `
+function Aritcle({ contentElement, title, imagePath }) {
+  const divElement = createElementHelper('div', 'article');
+
+  divElement.innerHTML = `
     <div class='article_wapper'>
       <img srcset=${imagePath} alt='thumbnail' class='article_img' decoding="async"/>
       <span class="article_title">${title}</span>

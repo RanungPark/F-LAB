@@ -1,6 +1,8 @@
+import { createElementHelper } from '../helpers/element.helpers.js';
+
 function Section({ contentElement }) {
-  const sectionElement = document.createElement('section');
-  sectionElement.className = 'section';
+  const sectionElement = createElementHelper('section', 'section');
+
   sectionElement.innerHTML = `
   <image class='section_img' src="https://static.toss.im/3d/website_code_blue_alpha.png" decoding="async">
   <div class='section_content'>
