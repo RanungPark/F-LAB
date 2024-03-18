@@ -16,19 +16,19 @@ document.addEventListener('click', router.navigate);
 
 router.addRouter({
   path: '/',
-  element: () => TechPage({ targetElement })(),
+  element: () => TechPage({ targetElement }),
 }).addRouter({
   path: '/tech',
-  element: () => TechPage({ targetElement })(),
+  element: () => TechPage({ targetElement }),
 }).addRouter({
   path: '/design',
-  element: () => DesignPage({ targetElement })(),
+  element: () => DesignPage({ targetElement }),
 }).addRouter({
   path: '/tech/article/:id',
-  element: ({ id }) => ArticlePage({ targetElement, id })(),
+  element: ({ id }) => ArticlePage({ targetElement, id }),
 }).addRouter({
   path: '/design/article/:id',
-  element: ({ id }) => ArticlePage({ targetElement, id })(),
+  element: ({ id }) => ArticlePage({ targetElement, id }),
 }).start();
 
 
