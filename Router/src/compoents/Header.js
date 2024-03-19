@@ -4,20 +4,20 @@ function Header({ contentElement }) {
   const headerElement = createElementHelper('nav', 'navbar');
 
   headerElement.innerHTML = `
-  <div class='navbar_content'>
-    <div class='navbar_logo'>
-      <img src='/src/mocks/Toss_Symbol_Primary.png' class='log_img' decoding='async'>
-      <span class='log_bold'>toss</span>
+  <div class='navbar-content'>
+    <div class='navbar-logo'>
+      <img src='/src/mocks/Toss_Symbol_Primary.png' class='log-img' decoding='async'>
+      <span class='log-bold'>toss</span>
       <span>tech</span>
     </div>
-    <ul class='navbar_list'>
-      <li class='navbar_item'>
+    <ul class='navbar-list'>
+      <li class='navbar-item'>
         <a href='/design'>디자인</a>
       </li>
-      <li class='navbar_item'>
+      <li class='navbar-item'>
         <a href='/tech'>개발</a>
       </li>
-      <li class='navbar_item'>
+      <li class='navbar-item'>
         <button class='btn'>채용 바로가기</button>
       </li>
     </ul>

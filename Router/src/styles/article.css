@@ -9,14 +9,14 @@
   height: 60vh;
 }
 
-.article_img {
+.article-img {
   display: block;
   width: 640px;
   height: 320px;
   border-radius: 16px;
 }
 
-.article_wapper {
+.article-wapper {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -24,7 +24,7 @@
   width: 644px;
 }
 
-.article_title {
+.article-title {
   display: block;
   font-size: 36px;
   line-height: 50px;

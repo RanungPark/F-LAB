@@ -1,7 +1,7 @@
 import { createElementHelper } from '../helpers/element.helpers.js';
 
 function BlogImg({ blogElement, imagePath }) {
-  const imgElement = createElementHelper('img', 'blog_img');
+  const imgElement = createElementHelper('img', 'blog-img');
 
   imgElement.srcset = `${imagePath}`;
 

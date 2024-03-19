@@ -17,13 +17,13 @@
   font-weight: 700;
 }
 
-.list_wrapper {
+.list-wrapper {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.item_img {
+.item-img {
   display: block;
   margin: 32px 0px;
   width: 240px;
@@ -32,24 +32,24 @@
   margin-right: 48px;
 }
 
-.item_title {
+.item-title {
   font-size: 36px;
   line-height: 50px;
   font-weight: 700;
 }
 
-.item_content {
+.item-content {
   line-height: 27px;
   font-size: 17px;
   font-weight: 500;
 }
 
-.item_date {
+.item-date {
   font-size: 15px;
   color: #8b95a1;
 }
 
-.item_info span {
+.item-info span {
   display: block;
   margin-bottom: 14px;
 }

@@ -6,35 +6,35 @@
   align-items: center;
 }
 
-.footer_wapper {
+.footer-wapper {
   width: 980px;
   margin: 64px 0;
   height: 400px;
   font-size: 14px;
 }
 
-.footer_connect_wapper {
+.footer-connect-wapper {
   display: flex;
   margin-bottom: 32px;
 }
-.footer_connect_title {
+.footer-connect-title {
   font-weight: 700;
   margin-right: 128px;
 }
 
-.footer_connect span {
+.footer-connect span {
   display: block;
   margin-bottom: 16px;
 }
 
-.footer_info {
+.footer-info {
   margin-bottom: 96px;
 }
-.footer_info span {
+.footer-info span {
   display: block;
 }
 
-.footer_info_title {
+.footer-info-title {
   font-weight: 700;
   margin-bottom: 16px;
 }
@@ -43,7 +43,7 @@
   display: flex;
   align-items: center;
 }
-.blog img {
+.blog-img {
   display: block;
   margin-right: 8px;
 }

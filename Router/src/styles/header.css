@@ -11,42 +11,42 @@
   background-color: #ffffff;
 }
 
-.navbar_content {
+.navbar-content {
   width: 1140px;
   height: 60px;
   display: flex;
   justify-content: space-between;
 }
 
-.navbar_logo {
+.navbar-logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navbar_logo span {
+.navbar-logo span {
   display: block;
   font-size: 20px;
   color: #202632;
 }
 
-.log_bold {
+.log-bold {
   font-weight: 700;
   margin-right: 2px;
 }
 
-.log_img {
+.log-img {
   display: block;
   width: 25px;
   height: 25px;
   margin-right: 2px;
 }
 
-.navbar_list {
+.navbar-list {
   display: flex;
   align-items: center;
 }
 
-.navbar_list * {
+.navbar-list * {
   margin-right: 15px;
 }

@@ -5,30 +5,30 @@ import BlogImg from './Blogimg.js';
 
 function Footer({ contentElement }) {
   const footerElement = createElementHelper('footer', 'footer');
-  const footerWapperElement = createElementHelper('div', 'footer_wapper');
+  const footerWapperElement = createElementHelper('div', 'footer-wapper');
   const blogElement = createElementHelper('div', 'blog');
 
   footerWapperElement.innerHTML = `
-    <div class='footer_connect_wapper'>
-      <div class='footer_connect'>
-        <span class='footer_connect_title'>토스테크</span>
+    <div class='footer-connect-wapper'>
+      <div class='footer-connect'>
+        <span class='footer-connect-title'>토스테크</span>
         <span>의견 보내기</span>
       </div>
-      <div class='footer_connect'>
-        <span class='footer_connect_title'>토스</span>
+      <div class='footer-connect'>
+        <span class='footer-connect-title'>토스</span>
         <span>홈페이지</span>
         <span>회사 소개</span>
         <span>채용</span>
       </div>
-      <div class='footer_connect'>
-        <span class='footer_connect_title'>고객센터</span>
+      <div class='footer-connect'>
+        <span class='footer-connect-title'>고객센터</span>
         <span>전화: 1599-4905 (24시간 연중무휴)</span>
         <span>이메일: support@toss.im</span>
         <span>카카오톡: @toss</span>
       </div>
     </div>
-    <div class='footer_info'>
-      <span class='footer_info_title'>㈜비바리퍼블리카</span>
+    <div class='footer-info'>
+      <span class='footer-info-title'>㈜비바리퍼블리카</span>
       <span>Copyright © Viva Republica, Inc. All Rights Reserved.</span>
     </div>
   `
