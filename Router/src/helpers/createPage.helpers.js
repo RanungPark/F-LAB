@@ -2,8 +2,14 @@ import Footer from '../compoents/Footer.js';
 import Header from '../compoents/Header.js';
 import Section from '../compoents/Section.js';
 import { createElementHelper, renderHelper } from './element.helpers.js';
+import { isHTMLElement } from './typeCheck.helpers.js';
 
 function createPage({ targetElement, tag, className }, bodyCompoents, title = '', imagePath = '') {
+  if (!isHTMLElement(targetElement)) {
+    console.error('Error: targetElement 요소는 HTMLElement의 인스턴스여야 합니다.');
+    return;
+  }
+  
   const contentElement = createElementHelper(tag, className);
 
   Promise.resolve(Header({ contentElement }))
@@ -20,4 +26,3 @@ function createPage({ targetElement, tag, className }, bodyCompoents, title = ''
 }
 
 export default createPage;
-
