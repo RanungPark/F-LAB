@@ -1,4 +1,4 @@
-import { isHTMLElement, isString } from './typeCheck.helpers';
+import { isHTMLElement, isString } from './typeCheck.helpers.js';
 
 export function createElementHelper(tag, className) {
   if (!isString(tag)) {
