@@ -1,8 +1,7 @@
 import { createStore } from './core/store.js';
 
 const initState = {
-  a: 10,
-  b: 20,
+  items: ['item1', 'item2']
 }
 
 export const SET_A = 'SET_A';
