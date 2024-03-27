@@ -6,13 +6,14 @@ export class Counter extends Component {
     super();
   }
 
-  render({state}) {
-    const root = this.getTemplate("count")
+  render({ state }) {
 
-    const span = root.querySelector("span")
-    
-    span.textContents = state.number
+    const root = this.getTemplate("count");
 
-    this.target.appendChild(root)
+    const span = root.querySelector("span");
+
+    span.textContent = state;
+
+    this.target.appendChild(root);
   }
 }
