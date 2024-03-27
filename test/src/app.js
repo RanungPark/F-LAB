@@ -1,6 +1,6 @@
 import { Button } from "./components/Button.js";
 import { Counter } from "./components/Counter.js";
-import { event } from "src/libs/eventbus.js";
+import { event } from './libs/eventbus/eventbus.js';
 
 export const actions = {
   increment: (number) => {
@@ -20,12 +20,17 @@ export const actions = {
 /**
  * model
  */
-const initialState = {
-  number: 0,
-};
 
-const handlers = {
+
+export const handlers = {
   INCREMENT: (prev, event) => {
+    const { number } = event.payload;
+    return {
+      ...prev,
+      number
+    }
+  },
+  DECREMENT: (prev, event) => {
     const { number } = event.payload;
 
     return {
@@ -33,21 +38,18 @@ const handlers = {
       number
     }
   },
-  DECREMENT: () => {},
 };
 
 function main() {
   const { number } = event.getState();
-  
 
   const counter = new Counter();
   const buttons = new Button();
 
-  counter.render(
+  counter.render({
     state: number,
     dispatch: event.dispatch
-    
-  );
+  });
   buttons.render({
     state: number,
     dispatch: event.dispatch
