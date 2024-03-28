@@ -24,7 +24,7 @@ export const event = {
       if (handler) {
         initialState = { ...handler(initialState, action) };
         console.log(initialState)
-        listeners.forEach(listnenr => listnenr())
+        listeners.forEach(listener => listener())
       }
     }
   }
