@@ -1,7 +1,6 @@
 export class Component {
-
   constructor() {
-    this.target = document.getElementById("app");
+    this.target = document.getElementById('app');
   }
 
   getTemplate(id) {

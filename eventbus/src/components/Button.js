@@ -1,4 +1,4 @@
-import { actions } from '../app.js';
+import { actions } from '../libs/eventbus/actions.js';
 import { Component } from "./Component.js";
 
 export class Button extends Component {
@@ -7,12 +7,10 @@ export class Button extends Component {
   }
 
   render({ state, dispatch }) {
-    
     const root = this.getTemplate("buttons");
+
     const increment = root.querySelector(".increment");
     const decrement = root.querySelector(".decrement");
-
-   
 
     increment.addEventListener("click", () => {
       dispatch(actions.increment(state++));
@@ -21,6 +19,6 @@ export class Button extends Component {
       dispatch(actions.decrement(state--));
     });
 
-    this.target.appendChild(root);
+    this.target.appendChild(root)
   }
 }

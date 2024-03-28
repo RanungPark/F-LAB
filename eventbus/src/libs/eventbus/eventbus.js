@@ -1,5 +1,4 @@
-import { handlers } from '../../app.js';
-
+import { handlers } from './handlers';
 
 let initialState = {
   number: 0,
@@ -23,8 +22,7 @@ export const event = {
       const handler = handlers[action.type];
       if (handler) {
         initialState = { ...handler(initialState, action) };
-        console.log(initialState)
-        listeners.forEach(listener => listener())
+        listeners.forEach(listener => { listener() })
       }
     }
   }
