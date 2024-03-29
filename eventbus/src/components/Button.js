@@ -6,19 +6,23 @@ export class Button extends Component {
     super();
   }
 
-  render({ state, dispatch }) {
+  render({ state, dispatch, temp}) {
     const root = this.getTemplate("buttons");
 
     const increment = root.querySelector(".increment");
     const decrement = root.querySelector(".decrement");
 
     increment.addEventListener("click", () => {
-      dispatch(actions.increment(state++));
+      dispatch(actions.increment(++state));
     });
     decrement.addEventListener("click", () => {
-      dispatch(actions.decrement(state--));
+      dispatch(actions.decrement(--state));
     });
 
-    this.target.appendChild(root)
+    temp.appendChild(root)
   }
 }
+
+
+
+
