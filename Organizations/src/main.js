@@ -1,3 +1,3 @@
-import {App} from "./app.js";
+import app from './app.js';
 
-new App(document.querySelector('#app'));
+app(document.getElementById('app'))
