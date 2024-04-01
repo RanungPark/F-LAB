@@ -1,10 +1,11 @@
-import { Card } from './Components/Card.js';
+import { CardList } from './Components/CardList.js';
 import { SideTable } from './Components/SideTable.js';
+import { event } from './libs/eventBus.js';
 
 export default function app(target) {
-  const sideTable = new SideTable()
-  const card = new Card()
+  const sideTable = new SideTable();
+  const cardList = new CardList();
 
-  sideTable.render(target)
-  card.render(target)
+  sideTable.render(target);
+  cardList.render(target, event.getState().cards)
 }
