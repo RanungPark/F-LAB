@@ -1,0 +1,17 @@
+#aside-wrapper {
+  margin: 1vw 0;
+  width: 15vw;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+#tree-menu-header {
+  border-bottom: 1px solid #bdbdbd;
+  padding: 16px;
+  font-weight: bold;
+}
+
+
+#tree-menu-body {
+  padding: 16px;
+}

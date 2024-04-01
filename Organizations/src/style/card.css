@@ -1,0 +1,99 @@
+#main-wrapper {
+  margin: auto;
+  overflow: scroll;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#main-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#card-list {
+  width: 50vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#card {
+  width: 250px;
+  height: 320px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  margin: 1.3vw auto;
+}
+
+.card-header {
+  border-bottom: 1px solid #bdbdbd;
+  display: flex;
+  padding: 16px;
+}
+
+.profile {
+  width: 80px;
+  height: 80px;
+  background-color: #a4a4a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.profile i {
+  font-size: 48px;
+}
+
+.header-info {
+  margin-top: 8px;
+}
+
+.header-info span {
+  display: block;
+  font-weight: 800;
+}
+
+.header-info span:first-child {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.team {
+  font-weight: 800;
+  color: #0080ff;
+  margin-bottom: 32px;
+}
+
+#body-info-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#body-info-line:last-child {
+  margin-bottom: 0;
+}
+
+#card-body-info-image {
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+#card-body-info-image i {
+  font-size: 16px;
+}

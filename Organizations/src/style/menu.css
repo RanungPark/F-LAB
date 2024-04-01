@@ -1,0 +1,141 @@
+/* TRANSITIONS */
+/* COLORS */
+/* TREE MENU */
+.tree-menus {
+  padding: 10px;
+  list-style: none;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tree-menus .tree-input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.tree-menus .tree-input ~ ul {
+  display: none;
+  padding: 0px;
+  animation: slideDown 0.5s ease-out;
+}
+
+.tree-menus .tree-input:checked ~ ul {
+  display: block;
+}
+
+.tree-menus .tree-input:checked ~ label.tree-label:before {
+  content: "–";
+}
+
+.tree-menus .tree-input:checked ~ label.tree-label:after {
+  border-radius: 0 0.3em 0 0;
+  border-top: 1px solid #606060;
+  border-right: 1px solid #606060;
+  border-bottom: 0;
+  border-left: 0;
+  bottom: 0;
+  top: 0.5em;
+  height: auto;
+  margin: 5px 0px 0px 1px;
+}
+
+.tree-menus > li:last-child:before {
+  display: none;
+}
+
+.tree-menus li {
+  line-height: 1.2;
+  position: relative;
+  padding: 0 0 1em 1em;
+  list-style: none;
+}
+
+.tree-menus li:last-child:before {
+  height: 1em;
+  bottom: auto;
+}
+
+.tree-menus li:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -0.5em;
+  display: block;
+  width: 0;
+  border-left: 1px solid #606060;
+  content: "";
+}
+
+.tree-menus li:last-child {
+  padding-bottom: 0;
+}
+
+.tree-menus li ul li {
+  padding: 0.5em 0 0 1em;
+}
+
+.tree-menus label {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-radius: 3px;
+}
+
+.tree-menus label.tree-label {
+  cursor: pointer;
+  margin: 0px;
+  width: 100%;
+  padding: 5px;
+}
+
+.tree-menus label:hover {
+  color: white;
+  background: #0080ff;
+}
+
+.tree-menus label.tree-label:before {
+  background: #0080ff;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  float: left;
+  margin: 0 1em 0 -2.3em;
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  content: "+";
+  text-align: center;
+  line-height: 0.9em;
+}
+
+.tree-menus label.tree-label:after {
+  border-bottom: 0;
+}
+
+.tree-menus .tree-label {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+}
+
+.tree-menus .tree-label:after {
+  position: absolute;
+  top: 0.5em;
+  left: -1.5em;
+  display: block;
+  height: 0.5em;
+  width: 1em;
+  border-bottom: 1px solid #606060;
+  border-left: 1px solid #606060;
+  border-radius: 0 0 0 0.3em;
+  content: "";
+}
