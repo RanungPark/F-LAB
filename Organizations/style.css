@@ -1,0 +1,220 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 13px;
+  color: #4e5968;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#card-list {
+  width: 900px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#card {
+  width: 250px;
+  height: 320px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+.card-header {
+  border-bottom: 1px solid #bdbdbd;
+  display: flex;
+  padding: 16px;
+}
+
+.profile {
+  width: 80px;
+  height: 80px;
+  background-color: #a4a4a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.profile img {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.header-info {
+  margin-top: 8px;
+}
+
+.header-info span {
+  display: block;
+  font-weight: 800;
+}
+
+.header-info span:first-child {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.team {
+  font-weight: 800;
+  color: #0080ff;
+  margin-bottom: 32px;
+}
+
+#body-info-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#body-info-line:last-child {
+  margin-bottom: 0;
+}
+
+#card-body-info-image {
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+#card-body-info-image img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
