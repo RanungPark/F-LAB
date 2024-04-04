@@ -1,14 +1,14 @@
-import { iconClassName } from '../data/iconClassName.js';
-import { CardBodyInfo } from './CardBodyInfo.js';
-import { Component } from './Component.js';
+import { iconClassName } from "../data/iconClassName.js";
+import { CardBodyInfo } from "./CardBodyInfo.js";
+import { Component } from "./Component.js";
 
 export class Card extends Component {
   render(target, { state }) {
-    const card = this.setRoot('card');
-    card.id = 'card'
+    const card = this.setRoot("card");
+    card.id = "card"
     card.className = `card-${state.id}`
 
-    const getElementArr = ['.profile', '.header-info', '.team', '.body-info']
+    const getElementArr = [".profile", ".header-info", ".team", ".body-info"]
     const [profile, headerInfo, team, bodyInfo] = this.getElements(getElementArr)
 
     this.setIconElement({ target: profile, className: iconClassName.user });
@@ -17,7 +17,7 @@ export class Card extends Component {
       const className = `header-info-${key}`;
       const content = state.headerInfo[key];
 
-      const headerInfoLine = this.setElement('span', { className, content });
+      const headerInfoLine = this.setElement("span", { className, content });
 
       this.appendChildElement(headerInfo, headerInfoLine)
     }
@@ -25,9 +25,9 @@ export class Card extends Component {
     team.textContent = state.team
 
     for (const key in iconClassName) {
-      const keyInText = 'body_info_'
+      const keyInText = "body_info_"
       if (key.includes(keyInText)) {
-        const bodyInfoLine = this.setElement('div', { id: 'body-info-line' })
+        const bodyInfoLine = this.setElement("div", { id: "body-info-line" })
         const content = state.bodyInfo[key.slice(keyInText.length)]
 
         new CardBodyInfo().render(bodyInfoLine, iconClassName[key], content)
