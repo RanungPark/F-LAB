@@ -48,8 +48,8 @@ export class Component {
   }
 
   setIconElement({ target = null, id = null, className }) {
-    const imageWrapper = target ? target : this.setElement('div', { id });
-    const imageElement = document.createElement('i');
+    const imageWrapper = target ? target : this.setElement("div", { id });
+    const imageElement = document.createElement("i");
     imageElement.className = className;
 
     this.appendChildElement(imageWrapper, imageElement);
