@@ -1,0 +1,48 @@
+{
+  "HR": [
+    {
+      "id": 1,
+      "profile": "인사팀_이재윤",
+      "headerInfo": { "rank": "부장", "name": "이재윤" },
+      "team": "인사팀",
+      "bodyInfo": {
+        "mail": "6drm2pf@gmail.com",
+        "mobile": "010-1666-8649",
+        "phone": "02-962-2211"
+      }
+    },
+    {
+      "id": 2,
+      "profile": "인사팀_문승현",
+      "headerInfo": { "rank": "인턴", "name": "문승현" },
+      "team": "인사팀",
+      "bodyInfo": {
+        "mail": "79al2@naver.com",
+        "mobile": "010-8294-5667",
+        "phone": "02-625-7770"
+      }
+    },
+    {
+      "id": 3,
+      "profile": "인사팀_박민준",
+      "headerInfo": { "rank": "사원", "name": "박민준" },
+      "team": "인사팀",
+      "bodyInfo": {
+        "mail": "g2026n0nl@gmail.com",
+        "mobile": "010-3841-6579",
+        "phone": "02-880-9393"
+      }
+    },
+    {
+      "id": 4,
+      "profile": "인사팀_임수진",
+      "headerInfo": { "rank": "인턴", "name": "임수진" },
+      "team": "인사팀",
+      "bodyInfo": {
+        "mail": "0niswyta7@gmail.com",
+        "mobile": "010-5090-5539",
+        "phone": "02-175-5857"
+      }
+    }
+  ]
+}

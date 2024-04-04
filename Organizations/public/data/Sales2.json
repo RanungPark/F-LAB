@@ -1,0 +1,59 @@
+{
+  "Sales2": [
+    {
+      "id": 1,
+      "profile": "영업_2팀_김철수",
+      "headerInfo": { "rank": "부장", "name": "김철수" },
+      "team": "영업 2팀",
+      "bodyInfo": {
+        "mail": "m5cb2@naver.com",
+        "mobile": "010-8434-2557",
+        "phone": "02-720-9779"
+      }
+    },
+    {
+      "id": 2,
+      "profile": "영업_2팀_오준호",
+      "headerInfo": { "rank": "인턴", "name": "오준호" },
+      "team": "영업 2팀",
+      "bodyInfo": {
+        "mail": "idz44@gmail.com",
+        "mobile": "010-7568-6274",
+        "phone": "02-951-2817"
+      }
+    },
+    {
+      "id": 3,
+      "profile": "영업_2팀_배은주",
+      "headerInfo": { "rank": "대리", "name": "배은주" },
+      "team": "영업 2팀",
+      "bodyInfo": {
+        "mail": "c43le@gmail.com",
+        "mobile": "010-1282-8046",
+        "phone": "02-309-6679"
+      }
+    },
+    {
+      "id": 4,
+      "profile": "영업_2팀_김지민",
+      "headerInfo": { "rank": "인턴", "name": "김지민" },
+      "team": "영업 2팀",
+      "bodyInfo": {
+        "mail": "raiykh@naver.com",
+        "mobile": "010-1205-2188",
+        "phone": "02-160-0430"
+      }
+    },
+    {
+      "id": 5,
+      "profile": "영업_2팀_김민지",
+      "headerInfo": { "rank": "인턴", "name": "김민지" },
+      "team": "영업 2팀",
+      "bodyInfo": {
+        "mail": "o7tyu1r@naver.com",
+        "mobile": "010-8898-3203",
+        "phone": "02-005-3930"
+      }
+    }
+  ]
+}

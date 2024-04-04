@@ -1,0 +1,81 @@
+{
+  "Backend": [
+    {
+      "id": 1,
+      "profile": "백엔드_한지민",
+      "headerInfo": { "rank": "부장", "name": "한지민" },
+      "team": "백엔드",
+      "bodyInfo": {
+        "mail": "1gmqhdtez@naver.com",
+        "mobile": "010-6794-7960",
+        "phone": "02-072-1603"
+      }
+    },
+    {
+      "id": 2,
+      "profile": "백엔드_고윤서",
+      "headerInfo": { "rank": "대리", "name": "고윤서" },
+      "team": "백엔드",
+      "bodyInfo": {
+        "mail": "t9z753fmx@gmail.com",
+        "mobile": "010-8713-1840",
+        "phone": "02-951-2680"
+      }
+    },
+    {
+      "id": 3,
+      "profile": "백엔드_홍승희",
+      "headerInfo": { "rank": "팀장", "name": "홍승희" },
+      "team": "백엔드",
+      "bodyInfo": {
+        "mail": "58bre@gmail.com",
+        "mobile": "010-7075-4584",
+        "phone": "02-328-1822"
+      }
+    },
+    {
+      "id": 4,
+      "profile": "백엔드_장하늘",
+      "headerInfo": { "rank": "대리", "name": "장하늘" },
+      "team": "백엔드",
+      "bodyInfo": {
+        "mail": "e3iiaoj4@gmail.com",
+        "mobile": "010-4969-0512",
+        "phone": "02-525-6935"
+      }
+    },
+    {
+      "id": 5,
+      "profile": "백엔드_손준호",
+      "headerInfo": { "rank": "팀장", "name": "손준호" },
+      "team": "백엔드",
+      "bodyInfo": {
+        "mail": "pfps21wi4@naver.com",
+        "mobile": "010-0282-1977",
+        "phone": "02-204-0310"
+      }
+    },
+    {
+      "id": 6,
+      "profile": "백엔드_류지아",
+      "headerInfo": { "rank": "대리", "name": "류지아" },
+      "team": "백엔드",
+      "bodyInfo": {
+        "mail": "jqa7f6m@gmail.com",
+        "mobile": "010-4346-4766",
+        "phone": "02-166-9787"
+      }
+    },
+    {
+      "id": 7,
+      "profile": "백엔드_황지원",
+      "headerInfo": { "rank": "사원", "name": "황지원" },
+      "team": "백엔드",
+      "bodyInfo": {
+        "mail": "fqt8qseyp@gmail.com",
+        "mobile": "010-9285-7449",
+        "phone": "02-508-7271"
+      }
+    }
+  ]
+}

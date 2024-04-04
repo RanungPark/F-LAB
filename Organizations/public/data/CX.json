@@ -1,0 +1,26 @@
+{
+  "CX": [
+    {
+      "id": 1,
+      "profile": "CX팀_이서연",
+      "headerInfo": { "rank": "과장", "name": "이서연" },
+      "team": "CX팀",
+      "bodyInfo": {
+        "mail": "fl44sns@naver.com",
+        "mobile": "010-6913-8139",
+        "phone": "02-277-5680"
+      }
+    },
+    {
+      "id": 2,
+      "profile": "CX팀_나은희",
+      "headerInfo": { "rank": "사원", "name": "나은희" },
+      "team": "CX팀",
+      "bodyInfo": {
+        "mail": "pbo36btif@naver.com",
+        "mobile": "010-2068-0210",
+        "phone": "02-073-0196"
+      }
+    }
+  ]
+}

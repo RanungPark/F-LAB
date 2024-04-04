@@ -1,0 +1,103 @@
+{
+  "Marketing1": [
+    {
+      "id": 1,
+      "profile": "마케팅_1팀_주지영",
+      "headerInfo": { "rank": "과장", "name": "주지영" },
+      "team": "마케팅 1팀",
+      "bodyInfo": {
+        "mail": "dueuug@gmail.com",
+        "mobile": "010-9022-2193",
+        "phone": "02-154-7592"
+      }
+    },
+    {
+      "id": 2,
+      "profile": "마케팅_1팀_이준호",
+      "headerInfo": { "rank": "인턴", "name": "이준호" },
+      "team": "마케팅 1팀",
+      "bodyInfo": {
+        "mail": "vq8z0tl0@naver.com",
+        "mobile": "010-4503-0581",
+        "phone": "02-303-4918"
+      }
+    },
+    {
+      "id": 3,
+      "profile": "마케팅_1팀_정윤서",
+      "headerInfo": { "rank": "사원", "name": "정윤서" },
+      "team": "마케팅 1팀",
+      "bodyInfo": {
+        "mail": "5o6yc@naver.com",
+        "mobile": "010-9526-5176",
+        "phone": "02-825-8084"
+      }
+    },
+    {
+      "id": 4,
+      "profile": "마케팅_1팀_유주원",
+      "headerInfo": { "rank": "대리", "name": "유주원" },
+      "team": "마케팅 1팀",
+      "bodyInfo": {
+        "mail": "cs60c@naver.com",
+        "mobile": "010-2694-2026",
+        "phone": "02-076-5353"
+      }
+    },
+    {
+      "id": 5,
+      "profile": "마케팅_1팀_임재원",
+      "headerInfo": { "rank": "인턴", "name": "임재원" },
+      "team": "마케팅 1팀",
+      "bodyInfo": {
+        "mail": "kvmtlwh@naver.com",
+        "mobile": "010-1823-7656",
+        "phone": "02-189-5380"
+      }
+    },
+    {
+      "id": 6,
+      "profile": "마케팅_1팀_정유진",
+      "headerInfo": { "rank": "인턴", "name": "정유진" },
+      "team": "마케팅 1팀",
+      "bodyInfo": {
+        "mail": "hojgwtw@naver.com",
+        "mobile": "010-4693-1750",
+        "phone": "02-632-2857"
+      }
+    },
+    {
+      "id": 7,
+      "profile": "마케팅_1팀_최지성",
+      "headerInfo": { "rank": "인턴", "name": "최지성" },
+      "team": "마케팅 1팀",
+      "bodyInfo": {
+        "mail": "95lowi8a8v@naver.com",
+        "mobile": "010-5318-8247",
+        "phone": "02-972-6731"
+      }
+    },
+    {
+      "id": 8,
+      "profile": "마케팅_1팀_정지우",
+      "headerInfo": { "rank": "대리", "name": "정지우" },
+      "team": "마케팅 1팀",
+      "bodyInfo": {
+        "mail": "d0pqjgd@gmail.com",
+        "mobile": "010-8158-5908",
+        "phone": "02-350-8794"
+      }
+    },
+    {
+      "id": 9,
+      "profile": "마케팅_1팀_유지원",
+      "headerInfo": { "rank": "사원", "name": "유지원" },
+      "team": "마케팅 1팀",
+      "bodyInfo": {
+        "mail": "pv556e@naver.com",
+        "mobile": "010-6317-7444",
+        "phone": "02-664-5710"
+      }
+    }
+  ]
+}

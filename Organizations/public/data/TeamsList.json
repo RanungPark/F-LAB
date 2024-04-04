@@ -1,0 +1,72 @@
+{
+  "TeamsList": {
+    "title": "조직도",
+    "childs": [
+      {
+        "title": "영업부",
+        "childs": [
+          {
+            "teamCode": "Sales1",
+            "teamName": "영업 1팀"
+          },
+          {
+            "teamCode": "Sales2",
+            "teamName": "영업 2팀"
+          }
+        ]
+      },
+      {
+        "title": "경영부",
+        "childs": [
+          {
+            "teamCode": "GA",
+            "teamName": "총무팀"
+          },
+          {
+            "teamCode": "HR",
+            "teamName": "인사팀"
+          }
+        ]
+      },
+      {
+        "title": "개발부",
+        "childs": [
+          {
+            "teamCode": "Backend",
+            "teamName": "백엔드"
+          },
+          {
+            "teamCode": "Frontend",
+            "teamName": "프론트엔드"
+          },
+          {
+            "teamCode": "Mobile",
+            "teamName": "모바일"
+          }
+        ]
+      },
+      {
+        "title": "마케팅팀",
+        "childs": [
+          {
+            "teamCode": "Marketing1",
+            "teamName": "마케팅 1팀"
+          },
+          {
+            "teamCode": "Marketing1",
+            "teamName": "마케팅 2팀"
+          }
+        ]
+      },
+      {
+        "title": "운영부",
+        "childs": [
+          {
+            "teamCode": "CX",
+            "teamName": "CX팀"
+          }
+        ]
+      }
+    ]
+  }
+}

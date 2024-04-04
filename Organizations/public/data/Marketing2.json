@@ -1,0 +1,37 @@
+{
+  "Marketing2": [
+    {
+      "id": 1,
+      "profile": "마케팅_2팀_조성호",
+      "headerInfo": { "rank": "대리", "name": "조성호" },
+      "team": "마케팅 2팀",
+      "bodyInfo": {
+        "mail": "s0kmdhe@gmail.com",
+        "mobile": "010-9907-9886",
+        "phone": "02-745-7731"
+      }
+    },
+    {
+      "id": 2,
+      "profile": "마케팅_2팀_신미정",
+      "headerInfo": { "rank": "부장", "name": "신미정" },
+      "team": "마케팅 2팀",
+      "bodyInfo": {
+        "mail": "epv9o@naver.com",
+        "mobile": "010-9905-2978",
+        "phone": "02-460-3659"
+      }
+    },
+    {
+      "id": 3,
+      "profile": "마케팅_2팀_신우진",
+      "headerInfo": { "rank": "팀장", "name": "신우진" },
+      "team": "마케팅 2팀",
+      "bodyInfo": {
+        "mail": "nkun8ffc@naver.com",
+        "mobile": "010-3518-6399",
+        "phone": "02-032-5968"
+      }
+    }
+  ]
+}

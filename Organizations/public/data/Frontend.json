@@ -1,0 +1,48 @@
+{
+  "Frontend": [
+    {
+      "id": 1,
+      "profile": "프론트엔드_오성민",
+      "headerInfo": { "rank": "팀장", "name": "오성민" },
+      "team": "프론트엔드",
+      "bodyInfo": {
+        "mail": "g9r56vy@naver.com",
+        "mobile": "010-4030-8679",
+        "phone": "02-983-2736"
+      }
+    },
+    {
+      "id": 2,
+      "profile": "프론트엔드_신유진",
+      "headerInfo": { "rank": "인턴", "name": "신유진" },
+      "team": "프론트엔드",
+      "bodyInfo": {
+        "mail": "6cbcnae92a@naver.com",
+        "mobile": "010-9298-7749",
+        "phone": "02-815-2791"
+      }
+    },
+    {
+      "id": 3,
+      "profile": "프론트엔드_한성민",
+      "headerInfo": { "rank": "팀장", "name": "한성민" },
+      "team": "프론트엔드",
+      "bodyInfo": {
+        "mail": "s86rs@gmail.com",
+        "mobile": "010-6543-4077",
+        "phone": "02-960-3683"
+      }
+    },
+    {
+      "id": 4,
+      "profile": "프론트엔드_장민석",
+      "headerInfo": { "rank": "부장", "name": "장민석" },
+      "team": "프론트엔드",
+      "bodyInfo": {
+        "mail": "m7b516es@naver.com",
+        "mobile": "010-1026-1977",
+        "phone": "02-769-4780"
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "GA": [
+    {
+      "id": 1,
+      "profile": "총무팀_강수진",
+      "headerInfo": { "rank": "대리", "name": "강수진" },
+      "team": "총무팀",
+      "bodyInfo": {
+        "mail": "0hidc9v@naver.com",
+        "mobile": "010-0406-4541",
+        "phone": "02-577-4576"
+      }
+    },
+    {
+      "id": 2,
+      "profile": "총무팀_윤영호",
+      "headerInfo": { "rank": "사원", "name": "윤영호" },
+      "team": "총무팀",
+      "bodyInfo": {
+        "mail": "26tw9vvh@naver.com",
+        "mobile": "010-9532-1586",
+        "phone": "02-560-4406"
+      }
+    },
+    {
+      "id": 3,
+      "profile": "총무팀_신동희",
+      "headerInfo": { "rank": "인턴", "name": "신동희" },
+      "team": "총무팀",
+      "bodyInfo": {
+        "mail": "3mpmcfiyn@gmail.com",
+        "mobile": "010-8096-8958",
+        "phone": "02-300-8049"
+      }
+    },
+    {
+      "id": 4,
+      "profile": "총무팀_송은지",
+      "headerInfo": { "rank": "대리", "name": "송은지" },
+      "team": "총무팀",
+      "bodyInfo": {
+        "mail": "derbi@naver.com",
+        "mobile": "010-1716-7136",
+        "phone": "02-634-0524"
+      }
+    },
+    {
+      "id": 5,
+      "profile": "총무팀_김태영",
+      "headerInfo": { "rank": "부장", "name": "김태영" },
+      "team": "총무팀",
+      "bodyInfo": {
+        "mail": "twk754s5@gmail.com",
+        "mobile": "010-8574-1901",
+        "phone": "02-653-1193"
+      }
+    }
+  ]
+}
