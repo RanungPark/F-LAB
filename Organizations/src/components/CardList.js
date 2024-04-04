@@ -1,16 +1,16 @@
-import { Card } from './Card.js';
-import { Component } from './Component.js';
+import { Card } from "./Card.js";
+import { Component } from "./Component.js";
 
 export class CardList extends Component {
   render(target, state) {
     const setElementArr = [
       {
-        tag: 'main',
-        id: 'main-wrapper',
+        tag: "main",
+        id: "main-wrapper",
       },
       {
-        tag: 'ul',
-        id: 'card-list'
+        tag: "ul",
+        id: "card-list"
       },
     ]
     const [mainWrapper, cardList] = this.setElements(setElementArr)
