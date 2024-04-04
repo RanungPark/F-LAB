@@ -1,4 +1,3 @@
-import { teams } from "../data/teams.js";
 import { Component } from "./Component.js";
 import { TreeMenu } from "./TreeMenu.js";
 
