@@ -3,19 +3,32 @@ import { TreeMenuInput } from "./TreeMenuInput.js";
 import { TreeMenuSpan } from "./TreeMenuSpan.js";
 
 export class TreeMenu extends Component {
-  render(teams) {
-    const treeMenuInput = new TreeMenuInput().render(teams.title)
-    const treeMenuSpan = new TreeMenuSpan().render(teams.childs)
+  render({ teamState, dispatch }) {
+    const TMTitleComponent = new TreeMenuInput();
+    const TMChildsComponent = new TreeMenuSpan();
 
-    this.appendChildElement(treeMenuInput, "", treeMenuSpan)
-
-    teams.childs.forEach(team => {
-      if (typeof team.title !== "undefined") {
-        const chileTeam = this.render(team)
-        this.appendChildElement(treeMenuSpan, "", chileTeam)
-      }
+    const TMTitleWrapper = TMTitleComponent.render(
+      {
+        title: teamState.title,
+        dispatch
+      });
+    const TMChiledsWrapper = TMChildsComponent.render({
+      childs: teamState.childs,
+      dispatch
     });
 
-    return treeMenuInput
+    this.appendElements(TMTitleWrapper, TMChiledsWrapper);
+
+    teamState.childs.forEach(team => {
+      if (typeof team.title !== "undefined") {
+        const chileTeamComponent = this.render({
+          teamState: team,
+          dispatch
+        });
+        this.appendElements(TMChiledsWrapper, chileTeamComponent)
+      };
+    });
+
+    return TMTitleWrapper;
   }
 }
