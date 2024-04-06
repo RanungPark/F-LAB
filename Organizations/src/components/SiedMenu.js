@@ -2,7 +2,7 @@ import { Component } from "./Component.js";
 import { TreeMenus } from "./TreeMenus.js";
 
 export class SideMenu extends Component {
-  render(target, state) {
+  render({ state, dispatch }) {
     const setElementArr = [
       {
         tag: "aside",
@@ -16,13 +16,19 @@ export class SideMenu extends Component {
       {
         tag: "div",
         id: "tree-menu-body"
-      }
-    ]
+      },
+    ];
 
-    const [asideWrapper, treeMenuHeader, treeMenuBody] = this.setElements(setElementArr)
+    const [asideWrapper, TMHeader, TMBody] = this.setElements(setElementArr);
 
-    new TreeMenus().render(treeMenuBody, state)
+    const TMWrapperComponent = new TreeMenus();
+    const TMWrapper = TMWrapperComponent.render({
+      state,
+      dispatch
+    });
 
-    this.appendChildElement(target, asideWrapper, treeMenuHeader, treeMenuBody)
+    this.appendElements(TMBody, TMWrapper);
+    this.appendElements(asideWrapper, TMHeader, TMBody);
+    return [asideWrapper, TMHeader, TMBody];
   }
 }

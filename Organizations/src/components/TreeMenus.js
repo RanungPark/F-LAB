@@ -2,11 +2,19 @@ import { Component } from "./Component.js";
 import { TreeMenu } from "./TreeMenu.js";
 
 export class TreeMenus extends Component {
-  render(target, state) {
-    const treeMenus = this.setElement("ul", { className: "tree-menus" })
-    const newTreeMenu = new TreeMenu().render(state)
+  render({ state, dispatch }) {
+    const TMWrapper = this.setElement("ul", { className: "tree-menus" });
 
-    this.appendChildElement(target, treeMenus, newTreeMenu)
+    const TMComponent = new TreeMenu();
+    const TM = TMComponent.render(
+      {
+        teamState: state,
+        dispatch,
+      }
+    )
+
+    this.appendElements(TMWrapper, TM);
+    return TMWrapper;
   }
 }
 
