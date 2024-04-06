@@ -2,7 +2,7 @@ import { Card } from "./Card.js";
 import { Component } from "./Component.js";
 
 export class CardList extends Component {
-  render(target, state) {
+  render({ state }) {
     const setElementArr = [
       {
         tag: "main",
@@ -10,15 +10,18 @@ export class CardList extends Component {
       },
       {
         tag: "ul",
-        id: "card-list"
+        id: "card-list",
       },
-    ]
-    const [mainWrapper, cardList] = this.setElements(setElementArr)
+    ];
+    const [mainWrapper, cardList] = this.setElements(setElementArr);
 
     state.forEach(card => {
-      new Card().render(cardList, { state: card });
+      const cardComponent = new Card().render({ state: card });
+      this.appendElements(cardList, cardComponent);
     })
 
-    this.appendChildElement(target, mainWrapper, cardList)
+    this.appendElements(mainWrapper, cardList);
+
+    return [mainWrapper, cardList];
   }
 }
