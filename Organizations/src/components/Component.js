@@ -10,7 +10,7 @@ export class Component {
 
   getElements(selectors) {
     const element = [];
-    selectors.forEach(selector => element.push(this.root.querySelector(selector)))
+    selectors.forEach(selector => element.push(this.root.querySelector(selector)));
 
     return element;
   }
@@ -20,12 +20,12 @@ export class Component {
   }
 
   setElements(elementArrs) {
-    const elements = []
+    const elements = [];
     elementArrs.forEach(({ tag, id = null, className = null, content = null }) => {
       const element = document.createElement(tag);
       className ? element.className = className : element.id = id;
-      if (content) element.textContent = content
-      elements.push(element)
+      if (content) element.textContent = content;
+      elements.push(element);
     })
 
     return elements;
@@ -34,17 +34,16 @@ export class Component {
   setElement(tag, { className = null, id = null, content = null }) {
     const element = document.createElement(tag);
     className ? element.className = className : element.id = id;
-    if (content) element.textContent = content
+    if (content) element.textContent = content;
     return element;
   }
 
-  appendChildElement(target, targetchild = null, ...elements) {
-    if (targetchild) {
-      elements.forEach(element => targetchild.appendChild(element));
-      target.appendChild(targetchild);
-    } else {
-      elements.forEach(element => target.appendChild(element));
-    }
+  appendElements(target, ...elements) {
+    elements.forEach(element => target.appendChild(element));
+  }
+
+  appendChildsElement({ target, childs }) {
+    childs.forEach(child => this.appendElements(target, child));
   }
 
   setIconElement({ target = null, id = null, className }) {
@@ -52,7 +51,7 @@ export class Component {
     const imageElement = document.createElement("i");
     imageElement.className = className;
 
-    this.appendChildElement(imageWrapper, imageElement);
+    this.appendElements(imageWrapper, imageElement);
     return imageWrapper;
   }
 }
