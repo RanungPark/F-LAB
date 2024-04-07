@@ -3,21 +3,28 @@ export const handlers = {
     const { team } = event.payload;
     return {
       ...prev,
-      team
+      team,
     }
   },
   FIX_CardS: (prev, event) => {
     const { cards } = event.payload;
     return {
       ...prev,
-      cards
+      cards,
     }
   },
   FIX_TEAMS_LIST: (prev, event) => {
     const { teamsList } = event.payload;
     return {
       ...prev,
-      teamsList
+      teamsList,
+    }
+  },
+  SET_CARD_NODES: (prev, event) => {
+    const {cardNodes} = event.payload;
+    return {
+      ...prev,
+      cardNodes
     }
   }
-}
+};
