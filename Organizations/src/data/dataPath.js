@@ -10,4 +10,4 @@ export const dataPath = {
   Marketing2: "../../public/data/Marketing2.json",
   CX: "../../public/data/CX.json",
   TeamsList: "../../public/data/TeamsList.json",
-}
+};
