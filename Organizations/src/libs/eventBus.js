@@ -3,7 +3,8 @@ import { handlers } from "./handlers.js";
 let initialState = {
   teamsList: {},
   team: '',
-  cards: []
+  cards: [],
+  cardNodes: {},
 };
 
 const listeners = []
@@ -15,7 +16,7 @@ export const event = {
 
   subscribe(listener) {
     if (typeof listener === "function") {
-      listeners.push(listener)
+      listeners.push(listener);
     }
   },
 
@@ -24,9 +25,9 @@ export const event = {
       const handler = handlers[action.type];
       if (handler) {
         initialState = { ...handler(initialState, action) };
-        console.log(initialState)
-        listeners.forEach(listener => listener())
+        console.log(initialState);
+        listeners.forEach(listener => listener());
       }
     }
-  }
-}
+  },
+};
