@@ -1,5 +1,5 @@
 import { Component } from "./Component.js";
-import { TreeMenus } from "./TreeMenus.js";
+import { TreeMenu } from "./TreeMenu.js";
 
 export class SideMenu extends Component {
   render({ state, dispatch }) {
@@ -21,13 +21,15 @@ export class SideMenu extends Component {
 
     const [asideWrapper, TMHeader, TMBody] = this.setElements(setElementArr);
 
-    const TMWrapperComponent = new TreeMenus();
-    const TMWrapper = TMWrapperComponent.render({
-      state,
-      dispatch
-    });
+    const TMComponent = new TreeMenu();
+    const TM = TMComponent.render(
+      {
+        teamState: state,
+        dispatch,
+      }
+    )
 
-    this.appendElements(TMBody, TMWrapper);
+    this.appendElements(TMBody, TM);
     this.appendElements(asideWrapper, TMHeader, TMBody);
     return [asideWrapper, TMHeader, TMBody];
   }
