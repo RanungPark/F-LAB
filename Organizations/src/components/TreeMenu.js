@@ -1,11 +1,12 @@
 import { Component } from "./Component.js";
-import { TreeMenuInput } from "./TreeMenuInput.js";
-import { TreeMenuSpan } from "./TreeMenuSpan.js";
+import { TreeMenuA } from './TreeMenuA.js';
+import { TreeMenuDetails } from './TreeMenuDetails.js';
 
 export class TreeMenu extends Component {
   render({ teamState, dispatch }) {
-    const TMTitleComponent = new TreeMenuInput();
-    const TMChildsComponent = new TreeMenuSpan();
+    const TMTitleComponent = new TreeMenuDetails();
+    const TMChildsComponent = new TreeMenuA();
+    
 
     const TMTitleWrapper = TMTitleComponent.render(
       {
