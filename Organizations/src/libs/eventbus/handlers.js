@@ -20,11 +20,4 @@ export const handlers = {
       teamsList,
     }
   },
-  SET_CARD_NODES: (prev, event) => {
-    const {cardNodes} = event.payload;
-    return {
-      ...prev,
-      cardNodes
-    }
-  }
 };

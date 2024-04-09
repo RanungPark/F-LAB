@@ -1,4 +1,4 @@
-import { getBackendDatas } from './getBackendDatas.js'
+import { getBackendDatas } from '../getBackendDatas.js'
 
 export const actions = {
   selectTeam: ({ team, action, dispatch }) => {
@@ -8,22 +8,16 @@ export const actions = {
       payload: { team },
     };
   },
-  FixCards: (cards) => {
+  fixCards: (cards) => {
     return {
       type: "FIX_CardS",
       payload: { cards },
     };
   },
-  FixTeamsList: (teamsList) => {
+  fixTeamsList: (teamsList) => {
     return {
       type: "FIX_TEAMS_LIST",
       payload: { teamsList },
     };
   },
-  setCardNodes: (cardNodes) => {
-    return {
-      type: 'SET_CARD_NODES',
-      payload: { cardNodes },
-    }
-  }
 };

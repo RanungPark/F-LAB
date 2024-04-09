@@ -4,7 +4,6 @@ let initialState = {
   teamsList: {},
   team: '',
   cards: [],
-  cardNodes: {},
 };
 
 const listeners = []
@@ -25,7 +24,6 @@ export const event = {
       const handler = handlers[action.type];
       if (handler) {
         initialState = { ...handler(initialState, action) };
-        console.log(initialState);
         listeners.forEach(listener => listener());
       }
     }
