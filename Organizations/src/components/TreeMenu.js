@@ -1,31 +1,19 @@
+import { render } from '../libs/render.js';
 import { Component } from "./Component.js";
 import { TreeMenuA } from './TreeMenuA.js';
 import { TreeMenuDetails } from './TreeMenuDetails.js';
 
 export class TreeMenu extends Component {
-  render({ teamState, dispatch }) {
+  render({ state: teamState, dispatch }) {
     const TMTitleComponent = new TreeMenuDetails();
     const TMChildsComponent = new TreeMenuA();
-    
 
-    const TMTitleWrapper = TMTitleComponent.render(
-      {
-        title: teamState.title,
-        dispatch
-      });
-    const TMChiledsWrapper = TMChildsComponent.render({
-      childs: teamState.childs,
-      dispatch
-    });
-
+    const [TMTitleWrapper, TMChiledsWrapper] = render({ component: TMTitleComponent, state: teamState.title }, { component: TMChildsComponent, state: teamState.childs })
     this.appendElements(TMTitleWrapper, TMChiledsWrapper);
 
     teamState.childs.forEach(team => {
       if (typeof team.title !== "undefined") {
-        const chileTeamComponent = this.render({
-          teamState: team,
-          dispatch
-        });
+        const [chileTeamComponent] = render({ component: this, state: team })
         this.appendElements(TMChiledsWrapper, chileTeamComponent)
       };
     });

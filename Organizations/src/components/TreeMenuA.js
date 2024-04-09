@@ -1,8 +1,8 @@
-import { actions } from "../libs/actions.js";
+import { actions } from "../libs/eventbus/actions.js";
 import { Component } from "./Component.js";
 
 export class TreeMenuA extends Component {
-  render({ childs, dispatch }) {
+  render({ state: childs, dispatch }) {
     const TMChiledsWrapper = this.setElement("ul", { className: "ulElement" });
 
     childs.forEach(child => {
@@ -14,7 +14,7 @@ export class TreeMenuA extends Component {
           e.preventDefault();
           dispatch(actions.selectTeam({
             team: child.teamCode,
-            action: actions.FixCards,
+            action: actions.fixCards,
             dispatch,
           }))
         })

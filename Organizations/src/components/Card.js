@@ -1,14 +1,14 @@
 import { iconClassName } from "../data/iconClassName.js";
-import { CardBodyInfo } from "./CardBodyInfo.js";
+import { render } from '../libs/render.js';
 import { CardBodyInfoLines } from './CardBodyInfoLines.js';
 import { CardHeaderInfo } from './CardHeaderInfo.js';
 import { Component } from "./Component.js";
 
 export class Card extends Component {
-  render({ state }) {
+  render({ state: cardState }) {
     const card = this.setRoot("card");
     card.id = "card";
-    card.className = `card-${state.id}`;
+    card.className = `card-${cardState.id}`;
 
     const getElementArr = [".profile", ".header-info", ".team", ".body-info"];
     const [profileWrapper, headerInfoWrapper, teamWrapper, bodyInfoWrapper] = this.getElements(getElementArr);
@@ -16,13 +16,13 @@ export class Card extends Component {
     this.setIconElement({ target: profileWrapper, className: iconClassName.user });
 
     const headerInfoLinesComponent = new CardHeaderInfo();
-    const haderInfoLines = headerInfoLinesComponent.render({ headerInfo: state.headerInfo });
+    const [haderInfoLines] = render({ component: headerInfoLinesComponent, state: cardState.headerInfo })
     this.appendChildsElement({ target: headerInfoWrapper, childs: haderInfoLines });
 
-    teamWrapper.textContent = state.team;
+    teamWrapper.textContent = cardState.team;
 
     const bodyInfoLinesComponent = new CardBodyInfoLines();
-    const bodyInfoLines = bodyInfoLinesComponent.render({ bodyInfo: state.bodyInfo });
+    const [bodyInfoLines] = render({ component: bodyInfoLinesComponent, state: cardState.bodyInfo })
     this.appendChildsElement({ target: bodyInfoWrapper, childs: bodyInfoLines });
 
     return card;

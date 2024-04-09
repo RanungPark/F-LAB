@@ -1,7 +1,7 @@
 import { Component } from './Component.js';
 
 export class CardHeaderInfo extends Component {
-  render({ headerInfo }) {
+  render({ state: headerInfo }) {
     const headerInfoLines = [];
     for (const key in headerInfo) {
       const className = `header-info-${key}`;
