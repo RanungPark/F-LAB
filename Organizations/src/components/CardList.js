@@ -1,8 +1,10 @@
+import { diffing } from '../libs/diffing/diifing.js';
+import { render } from '../libs/render.js';
 import { Card } from "./Card.js";
 import { Component } from "./Component.js";
 
 export class CardList extends Component {
-  render({ state }) {
+  render({ state: cards }) {
     const setElementArr = [
       {
         tag: "main",
@@ -15,13 +17,20 @@ export class CardList extends Component {
     ];
     const [mainWrapper, cardList] = this.setElements(setElementArr);
 
-    state.forEach(card => {
-      const cardComponent = new Card().render({ state: card });
-      this.appendElements(cardList, cardComponent);
+    cards.forEach(card => {
+      const cardComponent = new Card();
+      const [cardWrapper] = render({ component: cardComponent, state: card })
+      this.appendElements(cardList, cardWrapper);
     })
 
     this.appendElements(mainWrapper, cardList);
 
-    return [mainWrapper, cardList];
+    const currnetMainWrapper = document.getElementById('main-wrapper')
+    if (currnetMainWrapper) {
+      diffing(mainWrapper, currnetMainWrapper);
+      return currnetMainWrapper;
+    } else if (!currnetMainWrapper) {
+      return mainWrapper;
+    }
   }
 }
